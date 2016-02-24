@@ -1231,3 +1231,197 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for ::1 at 2016-02-24 12:24:38 -0800
+
+
+Started GET "/" for ::1 at 2016-02-24 12:44:31 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 4998ms (Views: 4951.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-24 12:44:36 -0800
+
+
+Started GET "/assets/components/gratitude.self-01cd6df1567d179234189e8b640ab918b5cc71a680363dbf3e2b86906255459e.js?body=1" for ::1 at 2016-02-24 12:44:36 -0800
+
+
+Started GET "/assets/components/gratitude_form.self-efed6e0de140f85108334766b84dc8b8382e5505e26c1aa72d706e322fd15347.js?body=1" for ::1 at 2016-02-24 12:44:36 -0800
+
+
+Started GET "/assets/components/gratitudes.self-dae2f938a1c8aec27bcfcceb0dc63ccb4345deab6daad729e792da2f8ae6126b.js?body=1" for ::1 at 2016-02-24 12:44:36 -0800
+
+
+Started GET "/" for ::1 at 2016-02-24 12:44:55 -0800
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1378ms (Views: 1356.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-24 12:44:56 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-24 12:44:56 -0800
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-24 12:44:56 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-24 12:44:56 -0800
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-24 12:44:56 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-24 12:44:56 -0800
+
+
+Started GET "/assets/components/gratitude.self-27f7eca237031fa77ff72e0d0c3fe89eab3df0ed5b357b1d70a1a4c76c4f6acb.js?body=1" for ::1 at 2016-02-24 12:44:56 -0800
+
+
+Started GET "/assets/components/add_gratitudes.self-0e79077598e9b59b332cbd33799ab3478eedca6ff3bc39ccdfa8e4d0f515f0a5.js?body=1" for ::1 at 2016-02-24 12:44:56 -0800
+
+
+Started GET "/assets/components/gratitude_form.self-efed6e0de140f85108334766b84dc8b8382e5505e26c1aa72d706e322fd15347.js?body=1" for ::1 at 2016-02-24 12:44:56 -0800
+
+
+Started GET "/assets/components/gratitudes.self-dae2f938a1c8aec27bcfcceb0dc63ccb4345deab6daad729e792da2f8ae6126b.js?body=1" for ::1 at 2016-02-24 12:44:56 -0800
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-24 12:44:56 -0800
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for ::1 at 2016-02-24 12:44:56 -0800
+
+
+Started GET "/" for ::1 at 2016-02-24 12:45:05 -0800
+Processing by UsersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-24 12:45:05 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-24 12:45:05 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-24 12:45:05 -0800
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-24 12:45:05 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-24 12:45:05 -0800
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-24 12:45:05 -0800
+
+
+Started GET "/assets/components/add_gratitudes.self-0e79077598e9b59b332cbd33799ab3478eedca6ff3bc39ccdfa8e4d0f515f0a5.js?body=1" for ::1 at 2016-02-24 12:45:05 -0800
+
+
+Started GET "/assets/components/gratitude.self-27f7eca237031fa77ff72e0d0c3fe89eab3df0ed5b357b1d70a1a4c76c4f6acb.js?body=1" for ::1 at 2016-02-24 12:45:05 -0800
+
+
+Started GET "/assets/components/gratitude_form.self-efed6e0de140f85108334766b84dc8b8382e5505e26c1aa72d706e322fd15347.js?body=1" for ::1 at 2016-02-24 12:45:05 -0800
+
+
+Started GET "/assets/components/gratitudes.self-dae2f938a1c8aec27bcfcceb0dc63ccb4345deab6daad729e792da2f8ae6126b.js?body=1" for ::1 at 2016-02-24 12:45:05 -0800
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-24 12:45:05 -0800
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for ::1 at 2016-02-24 12:45:05 -0800
+
+
+Started GET "/" for ::1 at 2016-02-24 12:46:23 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 650ms (Views: 609.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-24 12:46:24 -0800
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-24 12:46:24 -0800
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-24 12:46:24 -0800
+
+
+Started GET "/assets/components/gratitude.self-27f7eca237031fa77ff72e0d0c3fe89eab3df0ed5b357b1d70a1a4c76c4f6acb.js?body=1" for ::1 at 2016-02-24 12:46:24 -0800
+
+
+Started GET "/assets/components/add_gratitudes.self-0e79077598e9b59b332cbd33799ab3478eedca6ff3bc39ccdfa8e4d0f515f0a5.js?body=1" for ::1 at 2016-02-24 12:46:24 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-24 12:46:24 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-24 12:46:24 -0800
+
+
+Started GET "/assets/components/gratitudes.self-dae2f938a1c8aec27bcfcceb0dc63ccb4345deab6daad729e792da2f8ae6126b.js?body=1" for ::1 at 2016-02-24 12:46:24 -0800
+
+
+Started GET "/assets/components/gratitude_form.self-efed6e0de140f85108334766b84dc8b8382e5505e26c1aa72d706e322fd15347.js?body=1" for ::1 at 2016-02-24 12:46:24 -0800
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for ::1 at 2016-02-24 12:46:24 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-24 12:46:24 -0800
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-24 12:46:24 -0800
+
+
+Started GET "/" for ::1 at 2016-02-24 12:54:46 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GratitudesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered gratitudes/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 398ms (Views: 362.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-24 12:54:46 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-24 12:54:46 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-24 12:54:46 -0800
+
+
+Started GET "/assets/react_ujs.self-06684ab54101bce1b455802d71af1f7157c37b116c4b0c40b3c3b3dd8aee150d.js?body=1" for ::1 at 2016-02-24 12:54:46 -0800
+
+
+Started GET "/assets/development/react.self-fede65fd9a4acabec5ef1256b80983a6e6e8a68dec5eca279f6923ca213f7228.js?body=1" for ::1 at 2016-02-24 12:54:46 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-24 12:54:46 -0800
+
+
+Started GET "/assets/components/gratitude.self-27f7eca237031fa77ff72e0d0c3fe89eab3df0ed5b357b1d70a1a4c76c4f6acb.js?body=1" for ::1 at 2016-02-24 12:54:46 -0800
+
+
+Started GET "/assets/components/gratitude_form.self-efed6e0de140f85108334766b84dc8b8382e5505e26c1aa72d706e322fd15347.js?body=1" for ::1 at 2016-02-24 12:54:46 -0800
+
+
+Started GET "/assets/components/gratitudes.self-dae2f938a1c8aec27bcfcceb0dc63ccb4345deab6daad729e792da2f8ae6126b.js?body=1" for ::1 at 2016-02-24 12:54:46 -0800
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-24 12:54:46 -0800
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for ::1 at 2016-02-24 12:54:46 -0800
+
+
+Started GET "/assets/components/add_gratitudes.self-0e79077598e9b59b332cbd33799ab3478eedca6ff3bc39ccdfa8e4d0f515f0a5.js?body=1" for ::1 at 2016-02-24 12:54:46 -0800
