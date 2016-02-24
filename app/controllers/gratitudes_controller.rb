@@ -1,7 +1,7 @@
 class GratitudesController < ApplicationController
   def index
-      @gratitudes = Gratitude.all
-    end
+    @gratitudes = Gratitude.all
+  end
 
   def create
     @gratitude = Gratitude.new(gratitude_params)

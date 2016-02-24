@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  root 'gratitudes#new'
+  root 'gratitudes#index'
 
   resources :gratitudes
 

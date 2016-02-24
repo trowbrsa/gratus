@@ -1,5 +1,6 @@
 var Gratitudes = React.createClass({
   getInitialState: function() {
+  console.log(this.props.data);
     return { gratitudes: this.props.data };
   },
 
@@ -7,7 +8,7 @@ var Gratitudes = React.createClass({
     return { gratitudes: [] };
   },
 
-  addGratitude: function(gratitude) {
+  addRecord: function(gratitude) {
     var gratitudes = this.state.gratitudes.slice();
     gratitudes.push(gratitude);
     this.setState({ gratitudes: gratitudes });
@@ -16,10 +17,7 @@ var Gratitudes = React.createClass({
   render: function() {
     return(
       <div className='gratitudes'>
-        <h2 className='title'>
-          Write down some gratitudes!
-        </h2>
-        <GratitudeForm handleNewGratitude={this.addGratitude} />
+        <GratitudeForm handleNewRecord={this.addRecord} />
         <table className='table table-bordered'>
           <thead>
             <tr>

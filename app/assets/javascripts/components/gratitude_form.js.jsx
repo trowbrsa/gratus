@@ -1,7 +1,6 @@
 var GratitudeForm = React.createClass({
   getInitialState: function() {
-    return { description: '',
-    }
+    return { description: ''}
   },
 
   handleChange: function(e) {
@@ -17,10 +16,10 @@ var GratitudeForm = React.createClass({
 
   handleSubmit: function(e) {
     e.preventDefault();
-    $.post('',
+    $.post('/gratitudes',
       { gratitude: this.state },
       function(data) {
-        this.props.handleNewGratitude(data);
+        this.props.handleNewRecord(data);
         this.setState(this.getInitialState());
         }.bind(this),
         'JSON'
