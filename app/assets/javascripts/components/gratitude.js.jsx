@@ -3,6 +3,7 @@ var Gratitude = React.createClass({
     return(
       <tr>
         <td>{this.props.gratitude.description}</td>
+        <td>Delete</td>
       </tr>
     );
   }
