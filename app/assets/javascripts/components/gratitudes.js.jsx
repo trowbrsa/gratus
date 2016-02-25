@@ -1,6 +1,5 @@
 var Gratitudes = React.createClass({
   getInitialState: function() {
-  console.log(this.props.data);
     return { gratitudes: this.props.data };
   },
 
@@ -12,6 +11,10 @@ var Gratitudes = React.createClass({
     var gratitudes = this.state.gratitudes.slice();
     gratitudes.push(gratitude);
     this.setState({ gratitudes: gratitudes });
+  },
+
+  deleteElement:function() {
+    console.log("remove");
   },
 
   render: function() {
