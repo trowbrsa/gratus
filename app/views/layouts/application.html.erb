@@ -8,9 +8,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-
+  <% if !flash.empty? %>
+    <div class="flash">
+      <% flash.each do |key, value| %><%= value %>
+      <% end %>
+    </div>
+  <% end %>
 <%= yield %>
 
 </body>

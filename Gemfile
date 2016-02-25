@@ -49,6 +49,7 @@ group :development, :test do
   gem 'binding_of_caller'
   gem 'rails-erd'
   gem 'rspec-rails', '~> 3.0'
+  gem 'pry-rails'
 end
 
 group :development do
