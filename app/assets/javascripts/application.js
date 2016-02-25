@@ -13,12 +13,8 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery_ujs
-<<<<<<< HEAD
-//= require turbolinks//= require react
-=======
 //= require turbolinks
 //= require react
->>>>>>> addgrad
 //= require react_ujs
 //= require components
 
