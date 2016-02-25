@@ -11,6 +11,7 @@
 /tmp/
 .env
 *.env
+log/*
 
 ## Specific to RubyMotion:
 .dat*
