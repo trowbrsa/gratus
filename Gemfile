@@ -50,6 +50,7 @@ group :development, :test do
   gem 'rails-erd'
   gem 'rspec-rails', '~> 3.0'
   gem 'pry-rails'
+  gem 'dotenv-rails'
 end
 
 group :development do
