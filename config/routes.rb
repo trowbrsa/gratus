@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  root 'gratitudes#index'
+  root 'home#index'
 
-  get 'events/index' => 'events#index'
+  get 'events/' => 'events#index'
 
   resources :gratitudes
 

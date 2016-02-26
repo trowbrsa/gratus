@@ -13,20 +13,18 @@ var Gratitudes = React.createClass({
     this.setState({ gratitudes: gratitudes });
   },
 
-  deleteElement:function() {
-    console.log("remove");
-  },
+  // deleteRecord: function(gratitude) {
+  //   gratitude.preventDefault()
+  //    $.ajax
+  //    method: 'DELETE'
+  //    url: "/gratitudes/#{}"
+  // },
 
   render: function() {
     return(
       <div className='gratitudes'>
         <GratitudeForm handleNewRecord={this.addRecord} />
         <table className='table table-bordered'>
-          <thead>
-            <tr>
-              <th>Description</th>
-            </tr>
-          </thead>
           <tbody>
             {this.state.gratitudes.map(function(gratitude) {
               return <Gratitude key={gratitude.id} gratitude={gratitude} />
