@@ -33,6 +33,8 @@ gem 'devise'
 gem 'omniauth'
 gem 'omniauth-google'
 
+gem 'flickraw'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
