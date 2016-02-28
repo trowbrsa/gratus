@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root 'gratitudes#index'
 
   get 'events/index' => 'events#index'
+  get "events/show" => "events#show"
 
   resources :gratitudes
 

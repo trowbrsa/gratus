@@ -26,7 +26,6 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-
 gem 'react-rails'
 # for user authentication
 gem 'devise'
@@ -52,6 +51,7 @@ group :development, :test do
   gem 'rails-erd'
   gem 'rspec-rails', '~> 3.0'
   gem 'pry-rails'
+  gem 'dotenv-rails'
 end
 
 group :development do
