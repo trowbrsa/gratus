@@ -12,6 +12,7 @@
 .env
 *.env
 /log/*
+/db/development.sqlite3
 
 ## Specific to RubyMotion:
 .dat*
