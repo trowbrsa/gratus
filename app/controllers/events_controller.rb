@@ -8,14 +8,26 @@ class EventsController < ApplicationController
     FlickRaw.api_key = ENV["FLICKR_KEY"]
     FlickRaw.shared_secret = ENV["FLICKR_SECRET"]
     list = flickr.interestingness.getList :per_page => 20
-    photos = []
+    photo_detail = []
     list.each do |photo|
-      photos.push(FlickRaw.url(photo))
+      flickr_hash = {}
+      flickr_hash["url"] = FlickRaw.url(photo)
+      flickr_hash["title"] = photo.title
+      # flickr_hash["tags"] = flickr.photos.getInfo(photo.id).tags.map {|t| t.raw}
+      photo_detail.push(flickr_hash)
     end
-    @photos = photos
-
+    @photo_detail = photo_detail
   end
 end
+
+
+#
+#   photo_info =
+#   title = photo.title
+#   tags = photo.tags
+#   url = photo.FlickRaw.url_s
+# end
+# end
 
 #   def show
 

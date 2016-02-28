@@ -1,3 +1,4 @@
-<% @photos.each do |photo| %>
-  <img src="<%= photo %>" width="375" height="225" /><br/>
+<% @photo_detail.each do |photo| %>
+  <img src="<%= photo["url"] %>" width="375" height="225" /><br/>
+  <%= photo["title"] %>
 <% end %>
