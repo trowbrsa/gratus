@@ -13,7 +13,7 @@ class EventsController < ApplicationController
       flickr_hash = {}
       flickr_hash["url"] = FlickRaw.url(photo)
       flickr_hash["title"] = photo.title
-      # flickr_hash["tags"] = flickr.photos.getInfo(photo.id).tags.map {|t| t.raw}
+      # flickr_hash["tags"] = flickr.photos.getInfo(photo["id"]).to_s.tags.map {|t| t.raw}
       photo_detail.push(flickr_hash)
     end
     @photo_detail = photo_detail
