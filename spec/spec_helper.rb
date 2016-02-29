@@ -2,7 +2,6 @@ require 'rails_helper'
 require 'factory_girl'
 require 'devise'
 require 'support/controller_macros'
-# require 'support/controller_macros'
 
 
 
