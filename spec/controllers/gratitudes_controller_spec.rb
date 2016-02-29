@@ -11,7 +11,15 @@ RSpec.describe GratitudesController, type: :controller do
       description: "Family",
     }
   }
-end
+  end
+
+  # let(:bad_params) do
+  # {
+  #   gratitude: {
+  #     description: "",
+  #   }
+  # }
+  # end
 
   describe "GET 'index'" do
     it "is successful" do
@@ -26,6 +34,13 @@ end
       expect(response.header['Content-Type']).to include 'application/json'
     end
   end
+
+  # describe "DELETE 'destroy'" do
+  #   it "redirects to index page" do
+  #     delete :destroy, create_params
+  #     expect(response.status).to eq 200
+  #   end
+  # end
 
 
 end

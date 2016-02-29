@@ -13,12 +13,11 @@ class GratitudesController < ApplicationController
     end
   end
 
-  def destroy
-    @gratitude = Gratitude.find(params[:id])
-    @gratitude.destroy
-    head :no_content
-  end
-
+  # def destroy
+  #   @gratitude = Gratitude.find(params[:id])
+  #   @gratitude.destroy
+  #   head :no_content
+  # end
 
   private
 
