@@ -21,15 +21,6 @@ class EventsController < ApplicationController
 end
 
 
-#
-#   photo_info =
-#   title = photo.title
-#   tags = photo.tags
-#   url = photo.FlickRaw.url_s
-# end
-# end
-
-#   def show
 
 #     url = "25113616865"
 #     info = flickr.photos.getInfo(:photo_id =>url.split("/").last)
