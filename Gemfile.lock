@@ -238,7 +238,10 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise
   dotenv-rails
+<<<<<<< HEAD
   flickraw
+=======
+>>>>>>> deletegrad
   httparty
   jbuilder (~> 2.0)
   jquery-rails

@@ -4,6 +4,7 @@ require 'flickraw'
 
 class EventsController < ApplicationController
 
+<<<<<<< HEAD
   def show
     FlickRaw.api_key = ENV["FLICKR_KEY"]
     FlickRaw.shared_secret = ENV["FLICKR_SECRET"]
@@ -56,8 +57,3 @@ end
   #   end
   # end
 # end
-
-  # def flickr_url_generator
-  #   uri =
-  #
-  # end

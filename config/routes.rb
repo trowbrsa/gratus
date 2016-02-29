@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  root 'gratitudes#index'
+  root 'home#index'
 
+<<<<<<< HEAD
   get 'events/index' => 'events#index'
   get "events/show" => "events#show"
+=======
+  get 'events/' => 'events#index'
+>>>>>>> deletegrad
 
   resources :gratitudes
 
