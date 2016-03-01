@@ -5,7 +5,6 @@ require 'flickraw'
 class EventsController < ApplicationController
 
   def show
-    @params = params
     FlickRaw.api_key = ENV["FLICKR_KEY"]
     FlickRaw.shared_secret = ENV["FLICKR_SECRET"]
     list = flickr.interestingness.getList :per_page => 1, :page => params[:page]

@@ -1,12 +1,10 @@
 <div class="display">
 </div>
 
-<%= params %>
-
 <div class="imagestockpile">
   <% @photo_detail.each do |photo| %>
     <div class="owl-carousel">
-      <span><img class="lazyOwl" data-src="<%= photo["url"] %>" width="375" height="225" /></span>
+      <span><img class="lazyOwl" data-src="<%= photo["url"] %>"/></span>
       <br/>
       <%= photo["title"] %>
       <%= photo["tags"] %>
