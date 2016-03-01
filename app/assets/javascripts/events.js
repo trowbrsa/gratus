@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
   $("#owl-carousel").owlCarousel({
-    items : 4,
+    items : 1,
     lazyLoad : true,
     navigation : true
   });
@@ -11,7 +11,7 @@ $( document ).ready(function() {
 	var counter = 1;
 
 	//Figure out how many spans are inside the imagestockpile
-	var totalNum = $('.imagestockpile span').length;
+	var totalNum = $('.imagestockpile .owl-carousel span').length;
 
 	//make an array with all the source URLs
 	var stringArray = [];
@@ -47,14 +47,12 @@ $( document ).ready(function() {
 
     // .get(url[,data][,success][,dataType]) - data is a plain object sent to the server w/ the request
 
-    $.get('/events.json?' + $.param({page: counter + 1}), function(data, status){
-      console.log(data);
-      console.log(status);
+    $.get('/events.json?' + $.param({page: counter + 1}), function(data){
       // data has the entire information of the page. We only want URL.
     });
     //set the background image property of the display to an element in the array with counter as index
     // click-to-show not working
-    $('.click-to-show').css('display', 'block');
-    $('.display').css("background-image", 'url(' + stringArray[counter] + ')');
+    $('.display').css("background-image", 'url(' + data[0].url + ')');
+    // $('.display').css("background-image", 'url(' + stringArray[counter] + ')');
   });
 });
