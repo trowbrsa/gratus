@@ -14,11 +14,12 @@ var Gratitudes = React.createClass({
   },
 
   // deleteRecord: function(gratitude) {
-  //   gratitude.preventDefault()
-  //    $.ajax
-  //    method: 'DELETE'
-  //    url: "/gratitudes/#{}"
-  // },
+  //   var gratitudes = this.state.gratitudes.slice();
+  //   index = gratitudes.indexOf gratitude
+  //   gratitudes.splice index, 1
+  //
+  // }
+
 
   render: function() {
     return(

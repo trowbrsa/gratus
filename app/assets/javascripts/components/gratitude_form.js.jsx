@@ -1,6 +1,6 @@
 var GratitudeForm = React.createClass({
   getInitialState: function() {
-    return { description: ''}
+    return { description: ''};
   },
 
   handleChange: function(e) {

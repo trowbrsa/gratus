@@ -1,5 +1,17 @@
-<% @photo_detail.each do |photo| %>
-  <img src="<%= photo["url"] %>" width="375" height="225" /><br/>
-  <%= photo["title"] %>
-  <%= photo["tags"] %>
-<% end %>
+<div class="display">
+</div>
+
+<%= params %>
+
+<div class="imagestockpile">
+  <% @photo_detail.each do |photo| %>
+    <div class="owl-carousel">
+      <span><img class="lazyOwl" data-src="<%= photo["url"] %>" width="375" height="225" /></span>
+      <br/>
+      <%= photo["title"] %>
+      <%= photo["tags"] %>
+    </div>
+  <% end %>
+</div>
+
+<div class="btn btn-default" id="next-button">NEXT</div>

@@ -1,5 +1,8 @@
+require 'pry'
+
 class GratitudesController < ApplicationController
   def index
+    # show only gratitudes from date created on
     @gratitudes = Gratitude.all
   end
 
@@ -13,11 +16,15 @@ class GratitudesController < ApplicationController
     end
   end
 
-  # def destroy
-  #   @gratitude = Gratitude.find(params[:id])
-  #   @gratitude.destroy
-  #   head :no_content
-  # end
+  def grad_calendar
+    @gratitudes = Gratitude.all
+  end
+
+  def destroy
+    @gratitude = Gratitude.find(params[:id])
+    @gratitude.destroy
+    head :no_content
+  end
 
   private
 

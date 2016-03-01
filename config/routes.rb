@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   get '/events/' => 'events#show'
+  get '/gratitudecalendar/' => 'gratitudes#grad_calendar'
 
   resources :gratitudes
 
