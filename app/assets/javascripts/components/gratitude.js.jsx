@@ -1,20 +1,19 @@
 var Gratitude = React.createClass({
 
-  // handleDelete: function(gratitude) {
-  //   gratitude.preventDefault()
-  //    $.ajax
-  //      method: 'DELETE'
-  //      url: "/gratitudes/#{ @props.gratitude.id}"
-  //      dataType: 'JSON'
-  //       success: ()
-  //         @props.handleDeleteRecord @props.gratitude
-  //
-  // },
+  handleDelete: function(gratitude) {
+     $.ajax({
+       method: 'DELETE',
+       url: "/gratitudes/" + this.props.gratitude.id
+     }).success(function(){
+        this.props.deleteRecord(this.props.gratitude);
+      }.bind(this));
+  },
+
   render: function() {
     return(
       <tr>
         <td>{this.props.gratitude.description}</td>
-        <td>Delete</td>
+        <td><button className="btn btn-danger" type="button" onClick={this.handleDelete}>Remove</button></td>
       </tr>
     );
   }

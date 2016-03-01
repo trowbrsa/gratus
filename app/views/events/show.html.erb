@@ -3,13 +3,11 @@
 
 <div class="imagestockpile">
   <% @photo_detail.each do |photo| %>
-    <div class="owl-carousel">
-      <span><img class="lazyOwl" data-src="<%= photo["url"] %>"/></span>
+    <div id="slider" class="owl-carousel">
+      <div class="item"><img class="lazyOwl" data-src="<%= photo["url"] %>"/></div>
       <br/>
       <%= photo["title"] %>
       <%= photo["tags"] %>
     </div>
   <% end %>
 </div>
-
-<div class="btn btn-default" id="next-button">NEXT</div>
