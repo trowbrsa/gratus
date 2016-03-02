@@ -1,16 +1,10 @@
-<div class="display">
-</div>
-
 <div class="imagestockpile">
   <% @photo_detail.each do |photo| %>
-    <div id="slider" class="owl-carousel">
+    <div id="slider" class="carousel carousel-slide" data-transition="slide">
       <!-- {"url"=>"https://farm2.staticflickr.com/1485/25307315061_ebac1191e0.jpg", "title"=>"introspezione" -->
-      <div class="item"><img class="lazyOwl" data-src="<%= photo["url"] %>"/></div>
-      <br/>
-      <%= photo["title"] %>
-      <%= photo["tags"] %>
+      <div class="carousel-item carousel-active"><img src="<%= photo["url"] %>"/></div>
     </div>
+    <%= photo["title"] %>
+    <%= photo["tags"] %>
   <% end %>
 </div>
-
-<p>HELLO!</p>

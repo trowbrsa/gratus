@@ -16,6 +16,9 @@
 //= require react
 //= require react_ujs
 //= require components
-//= require owl.carousel
+//= require responsive-carousel
+//= require responsive-carousel.touch
+//= require responsive-carousel.drag
+//= require responsive-carousel.autoinit
 
 //= require_tree .
