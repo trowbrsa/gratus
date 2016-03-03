@@ -2,12 +2,15 @@ require 'pry'
 
 class GratitudesController < ApplicationController
   def index
-    # show only gratitudes from date created on
+    @user = current_user
     @gratitudes = Gratitude.all
+    # show only gratitudes from date created on
   end
 
   def create
-    @gratitude = Gratitude.new(gratitude_params)
+    user = current_user
+    @gratitude = user.gratitudes.new(gratitude_params)
+    # @gratitude.user_id = current_user.id
 
     if @gratitude.save
       render json: @gratitude
