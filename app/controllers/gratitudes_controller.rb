@@ -2,9 +2,9 @@ require 'pry'
 
 class GratitudesController < ApplicationController
   def index
-    @user = current_user
-    @gratitudes = Gratitude.all
-    # show only gratitudes from date created on
+    user = current_user
+    gratitudes = user.gratitudes
+    @gratitudes = gratitudes.where("created_at >= ?", Time.zone.now.beginning_of_day)
   end
 
   def create
@@ -20,7 +20,11 @@ class GratitudesController < ApplicationController
   end
 
   def grad_calendar
-    @gratitudes = Gratitude.all
+    user = current_user
+    @gratitudes = user.gratitudes
+
+    # Post.where(:created_at => (date.beginning_of_day..date.end_of_day))
+
   end
 
   def destroy
