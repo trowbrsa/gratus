@@ -1,6 +1,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+h1 {
+  font-family: 'Poiret One', cursive;
+}
+
+.navbar {
+  font-family: 'Poiret One', cursive;
+}
 
 .display {
   width: 100px;
@@ -18,7 +25,7 @@
 
 .background_image {
   background-image: url('nasa1.jpg');
-  background-repeat: no-repeat;
+  background-repeat: no-repeat center center;
   background-size: cover;
 }
 

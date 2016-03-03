@@ -1,9 +1,17 @@
+<div class="background_image"></div>
+
 <%= render 'layouts/navbar' %>
 
 <h1>Gratus</h1>
 
-<%= link_to 'Add a Gratitude', gratitudes_path %>
+<div>
+  <i class="material-icons">add_circle</i> <%= link_to 'Add a Gratitude', gratitudes_path %>
+</div>
 
-<%= link_to 'Find Inspiration', events_path %>
+<div>
+  <i class="material-icons">favorite</i><%= link_to 'Find Inspiration', events_path %>
+</div>
 
-<%= link_to 'View Calendar', gratitudecalendar_path %>
+<div>
+  <i class="material-icons">date_range</i><%= link_to 'View Calendar', gratitudecalendar_path %>
+</div>
