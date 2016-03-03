@@ -19,11 +19,9 @@ class GratitudesController < ApplicationController
     end
   end
 
-  def grad_calendar
+  def allgrads
     user = current_user
     @gratitudes = user.gratitudes
-
-    # Post.where(:created_at => (date.beginning_of_day..date.end_of_day))
 
   end
 

@@ -1,5 +1,7 @@
 <%= render 'layouts/navbar' %>
 
-<h3>Add 3 (or more!) things you are grateful for:</h3>
+<h3>Figure out a way to render day of each gratitude here</h3>
 
-<%= react_component 'Gratitudes', {data: @gratitudes } %>
+<% @gratitudes.each do |grad| %>
+  <%= grad.description %> 
+<% end %>

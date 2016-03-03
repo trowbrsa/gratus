@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
 
-  get 'calendar/show'
 
   devise_for :users
   root 'home#index'
 
   get '/events/' => 'events#show'
-  get '/gratitudecalendar/' => 'gratitudes#grad_calendar'
+  get '/mygratitudes/' => 'gratitudes#allgrads'
+
 
   resources :gratitudes
   resource :calendar, only: [:show], controller: :calendar
