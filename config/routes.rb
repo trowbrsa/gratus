@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'calendar/show'
+
   devise_for :users
   root 'home#index'
 
@@ -7,6 +9,7 @@ Rails.application.routes.draw do
   get '/gratitudecalendar/' => 'gratitudes#grad_calendar'
 
   resources :gratitudes
+  resource :calendar, only: [:show], controller: :calendar
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
