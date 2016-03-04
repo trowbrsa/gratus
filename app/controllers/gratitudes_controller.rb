@@ -26,7 +26,7 @@ class GratitudesController < ApplicationController
 
   def date
     date = params[:date]
-    date = Date.strptime(date, '%a, %d %b %Y %H:%M:%S %Z')
+    date = Date.strptime(date)
     # this gives us all of the gratitudes of the current_user
     @gratitudes = current_user.gratitudes.where('created_at >= :beginning_of_day or :end_of_day',
     :beginning_of_day => date,

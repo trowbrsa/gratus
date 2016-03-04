@@ -3,7 +3,7 @@
   <%= render 'layouts/navbar' %>
 
   <h1>Gratus</h1>
-  <h2 class="home-head">Welcome, <%= current_user.email %>!</h2>
+  <h2 class="home-head">Welcome, <%= current_user.first_name %>!</h2>
 
   <div>
     <i class="material-icons">add_circle</i> <%= link_to 'Add a Gratitude', gratitudes_path %>
