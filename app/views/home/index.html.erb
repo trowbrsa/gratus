@@ -5,6 +5,11 @@
 
     <h1>Gratus</h1>
     <h2 class="home-head">Welcome, <%= current_user.first_name %>!</h2>
+    <h3> Here are your gradstats: </h3>
+      <ul>
+        <li>You have <b><%= @total_gratitudes %></b> total gratitudes recorded!</li>
+        <li>Figure out a way to detect winning streak</li>
+      </ul>
 
     <div>
       <i class="material-icons">add_circle</i> <%= link_to 'Add a Gratitude', gratitudes_path %>
