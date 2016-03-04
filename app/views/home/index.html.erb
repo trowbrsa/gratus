@@ -1,20 +1,21 @@
 <div class="background_image">
-
   <%= render 'layouts/navbar' %>
+  <div class="container">
 
-  <h1>Gratus</h1>
-  <h2 class="home-head">Welcome, <%= current_user.first_name %>!</h2>
 
-  <div>
-    <i class="material-icons">add_circle</i> <%= link_to 'Add a Gratitude', gratitudes_path %>
+    <h1>Gratus</h1>
+    <h2 class="home-head">Welcome, <%= current_user.first_name %>!</h2>
+
+    <div>
+      <i class="material-icons">add_circle</i> <%= link_to 'Add a Gratitude', gratitudes_path %>
+    </div>
+
+    <div>
+      <i class="material-icons">favorite</i><%= link_to 'Find Inspiration', events_path %>
+    </div>
+
+    <div>
+      <i class="material-icons">date_range</i><%= link_to 'View Calendar', calendar_path %>
+    </div>
   </div>
-
-  <div>
-    <i class="material-icons">favorite</i><%= link_to 'Find Inspiration', events_path %>
-  </div>
-
-  <div>
-    <i class="material-icons">date_range</i><%= link_to 'View Calendar', calendar_path %>
-  </div>
-
 </div>

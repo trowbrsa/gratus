@@ -1,21 +1,19 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body {
+html, body {
   font-family: 'Nobile', sans-serif;
-}
-// h1 {
-//   font-family: 'Poiret One', cursive;
-// }
-//
-// .navbar {
-//   font-family: 'Poiret One', cursive;
-// }
+  height: 100%;
+  width: 100%;
+  // background-image: url('nasa1.jpg');
+  // background-repeat: no-repeat center center;
+  // background-size: cover;
+  // margin: 0;
+  // html, body {
 
-.display {
-  width: 100px;
-  height: 300px;
 }
+
+
 
 #slider .item{
   margin: 3px;
@@ -30,6 +28,8 @@ body {
   background-image: url('nasa1.jpg');
   background-repeat: no-repeat center center;
   background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .border-form-div {

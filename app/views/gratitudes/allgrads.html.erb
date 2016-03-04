@@ -1,7 +1,9 @@
 <%= render 'layouts/navbar' %>
+<div class="container">
 
-<h3>Figure out a way to render day of each gratitude here</h3>
+  <h3>Figure out a way to render day of each gratitude here</h3>
 
-<% @gratitudes.each do |grad| %>
-  <%= grad.description %> 
-<% end %>
+  <% @gratitudes.each do |grad| %>
+    <%= grad.description %>
+  <% end %>
+</div>
