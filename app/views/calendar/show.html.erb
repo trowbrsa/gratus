@@ -20,8 +20,9 @@
       <%= date.day %>
       <% if @gratitudes[date] %>
       <ul>
+        <%= @gratitudes[date].length %>
         <% @gratitudes[date].each do |grad| %>
-          <li><p>Hello!</p>
+          <%= grad.description %>
         <% end %>
       </ul>
     <% end %>
