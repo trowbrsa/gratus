@@ -22,7 +22,16 @@ class GratitudesController < ApplicationController
   def allgrads
     user = current_user
     @gratitudes = user.gratitudes
+  end
 
+  def date
+    date = params[:date]
+    date = Date.strptime(date, '%a, %d %b %Y %H:%M:%S %Z')
+    # this gives us all of the gratitudes of the current_user
+    @gratitudes = current_user.gratitudes.where('created_at >= :beginning_of_day or :end_of_day',
+    :beginning_of_day => date,
+    :end_of_day => date)
+    ## now we need to tell ActiveRecord to find only current users
   end
 
   def destroy

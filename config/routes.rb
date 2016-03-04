@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   get '/events/' => 'events#show'
+  get '/dayofgratitude/:date' => 'gratitudes#date', as: :dayofgratitude
   get '/mygratitudes/' => 'gratitudes#allgrads'
 
 

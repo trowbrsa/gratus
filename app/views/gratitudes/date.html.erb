@@ -1,0 +1,10 @@
+<%= render 'layouts/navbar' %>
+
+<h2> This will show you the date of the thing. </h2>
+<h3> here are the things you are grateful for on this day</h3>
+
+<%= react_component 'Gratitudes', {data: @gratitudes } %>
+
+<h2>Or, click on the below button to get inspired!</h2>
+
+<%= link_to "Get inspired!", events_path %>

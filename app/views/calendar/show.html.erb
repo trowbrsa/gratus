@@ -23,6 +23,8 @@
         <%= @gratitudes[date].length %>
         <% @gratitudes[date].each do |grad| %>
           <%= grad.description %>
+          <% params[:date] = date %>
+          <%= link_to "View", dayofgratitude_path(params[:date]) %>
         <% end %>
       </ul>
     <% end %>
