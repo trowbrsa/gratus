@@ -24,6 +24,17 @@ class GratitudesController < ApplicationController
     @gratitudes = user.gratitudes
   end
 
+  def allgradsjson
+    user = current_user
+    gratitudes = user.gratitudes
+    render :json => gratitudes.as_json, :status => :ok
+
+  end
+
+  def wordcloud
+
+  end
+
   def date
     date = params[:date]
     date = Date.strptime(date)
