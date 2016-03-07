@@ -24,13 +24,25 @@ class GratitudesController < ApplicationController
     @gratitudes = user.gratitudes
   end
 
+  def allgradsjson
+    user = current_user
+    gratitudes = user.gratitudes
+    render :json => gratitudes.as_json, :status => :ok
+
+  end
+
+  def wordcloud
+
+  end
+
   def date
+    # Post.where(:created_at => (date.beginning_of_day..date.end_of_day))
     date = params[:date]
     date = Date.strptime(date)
+
     # this gives us all of the gratitudes of the current_user
-    @gratitudes = current_user.gratitudes.where('created_at >= :beginning_of_day or :end_of_day',
-    :beginning_of_day => date,
-    :end_of_day => date)
+    @gratitudes = current_user.gratitudes.where(:created_at => (date.beginning_of_day..date.end_of_day))
+
     ## now we need to tell ActiveRecord to find only current users
   end
 

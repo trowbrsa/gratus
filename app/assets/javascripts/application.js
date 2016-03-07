@@ -20,5 +20,8 @@
 //= require responsive-carousel.touch
 //= require responsive-carousel.drag
 //= require responsive-carousel.autoinit
+//= require d3
+//= require d3.layout.cloud
+//= require word-cloud
 
 //= require_tree .

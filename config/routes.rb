@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get '/events/' => 'events#show'
   get '/dayofgratitude/:date' => 'gratitudes#date', as: :dayofgratitude
   get '/mygratitudes/' => 'gratitudes#allgrads'
+  get '/allgratitudes/' => 'gratitudes#allgradsjson'
+  get '/wordcloud/' => 'gratitudes#wordcloud'
 
 
   resources :gratitudes
