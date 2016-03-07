@@ -5,7 +5,8 @@
     <%= devise_error_messages! %>
 
     <div class="field">
-      <%= f.label :first_name %><br />
+      <%= f.label :first_name, required: true %>
+      <em>(required)</em><br />
       <%= f.text_field :first_name, autofocus: true %>
     </div>
 

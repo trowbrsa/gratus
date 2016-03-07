@@ -29,6 +29,9 @@
     Gratitude.create grad
   end
 
+  # seed_gratitudes.each do |seed|
+  #   seed.update_attribute :created_at, (rand*10).days.ago
+  # end
 
 
 

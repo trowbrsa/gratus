@@ -6,8 +6,6 @@ RSpec.describe EventsController, type: :controller do
   include Devise::TestHelpers
   login_user
 
-  # let! (:user) {FactoryGirl.create(:user)}
-
   describe "GET 'show'" do
     it "is successful" do
       get :show
