@@ -24,20 +24,21 @@ class GratitudesController < ApplicationController
     @gratitudes = user.gratitudes
   end
 
-  def allgradsjson
-    user = current_user
-    gratitudes = user.gratitudes
-    render :json => gratitudes.as_json, :status => :ok
-
-  end
+  # def allgradsjson
+  #   user = current_user
+  #   gratitudes = user.gratitudes
+  #   render :json => gratitudes.as_json, :status => :ok
+  #
+  # end
 
   def wordcloud
-
+    user = current_user
+    gon.gratitudes = user.gratitudes
   end
 
   def date
     date_string = params[:date]
-    @display_date = date_string.to_date 
+    @display_date = date_string.to_date
     date = Date.strptime(date_string)
     @gratitudes = current_user.gratitudes.where(:created_at => (date.beginning_of_day..date.end_of_day))
 
