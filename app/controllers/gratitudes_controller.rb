@@ -36,11 +36,9 @@ class GratitudesController < ApplicationController
   end
 
   def date
-    # Post.where(:created_at => (date.beginning_of_day..date.end_of_day))
-    date = params[:date]
-    date = Date.strptime(date)
-
-    # this gives us all of the gratitudes of the current_user
+    date_string = params[:date]
+    @display_date = date_string.to_date 
+    date = Date.strptime(date_string)
     @gratitudes = current_user.gratitudes.where(:created_at => (date.beginning_of_day..date.end_of_day))
 
     ## now we need to tell ActiveRecord to find only current users
