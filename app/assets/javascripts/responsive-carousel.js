@@ -427,7 +427,7 @@
 						if( thumb ){
 							content = "<img src='" + thumb + "' alt=''>";
 						}
-						pNav.append( "<li" + ( itemType ? " class='carousel-" + itemType + "'" : "" ) + "><a href='#" + num + "' title='Go to slide " + num + "'>" + (itemType ? itemType : content )+ "</a>" );
+						// pNav.append( "<li" + ( itemType ? " class='carousel-" + itemType + "'" : "" ) + "><a href='#" + num + "' title='Go to slide " + num + "'>" + (itemType ? itemType : content )+ "</a>" );
 					if( itemType ){
 						nav.addClass( "has-" + itemType );
 					}

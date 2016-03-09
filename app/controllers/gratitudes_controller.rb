@@ -10,7 +10,6 @@ class GratitudesController < ApplicationController
   def create
     user = current_user
     @gratitude = user.gratitudes.new(gratitude_params)
-    # @gratitude.user_id = current_user.id
 
     if @gratitude.save
       render json: @gratitude
@@ -24,13 +23,6 @@ class GratitudesController < ApplicationController
     @gratitudes = user.gratitudes
   end
 
-  # def allgradsjson
-  #   user = current_user
-  #   gratitudes = user.gratitudes
-  #   render :json => gratitudes.as_json, :status => :ok
-  #
-  # end
-
   def wordcloud
     user = current_user
     gon.gratitudes = user.gratitudes
@@ -41,8 +33,6 @@ class GratitudesController < ApplicationController
     @display_date = date_string.to_date
     date = Date.strptime(date_string)
     @gratitudes = current_user.gratitudes.where(:created_at => (date.beginning_of_day..date.end_of_day))
-
-    ## now we need to tell ActiveRecord to find only current users
   end
 
   def destroy
