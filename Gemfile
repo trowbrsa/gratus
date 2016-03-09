@@ -35,6 +35,10 @@ gem 'flickraw'
 # to pass data to JavaScript
 gem 'gon'
 
+gem 'aws-sdk' # S3 API
+gem 'paperclip' # file attachment syntax and callbacks
+gem 's3_direct_upload' # direct upload form helper and assets
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
