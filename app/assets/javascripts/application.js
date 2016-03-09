@@ -23,5 +23,6 @@
 //= require d3
 //= require d3.layout.cloud
 //= require word-cloud
+//= require s3_direct_upload
 
 //= require_tree .
