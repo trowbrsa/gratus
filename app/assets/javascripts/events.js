@@ -9,7 +9,7 @@ $( document ).ready(function() {
 		stringArray.push(b);
 	});
 
-	$('.carousel').on("goto.carousel", function(){
+	$('.carousel').on("beforegoto.carousel", function(){
 		counter++;
     $.get('/events.json?' + $.param({page: counter + 1}), function(data){
       console.log("this is the data after you click", data);

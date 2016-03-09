@@ -1,5 +1,9 @@
 $( document ).ready(function() {
 
+  if (typeof gon === "undefined") {
+    return;
+  }
+
   var allgratitudes = gon.gratitudes
 
   var descString = "";

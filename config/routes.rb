@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-
   devise_for :users, :controllers => { registrations: 'registrations' }
   root 'home#index'
 
@@ -11,6 +10,8 @@ Rails.application.routes.draw do
   get '/mygratitudes/' => 'gratitudes#allgrads'
   get '/allgratitudes/' => 'gratitudes#allgradsjson'
   get '/wordcloud/' => 'gratitudes#wordcloud'
+  get "/.well-known/acme-challenge/#{ENV['LE_AUTH_REQUEST']}", to: 'home#letsencrypt'
+
 
 
   resources :gratitudes
