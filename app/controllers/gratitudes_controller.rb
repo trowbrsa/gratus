@@ -10,7 +10,6 @@ class GratitudesController < ApplicationController
   def create
     user = current_user
     @gratitude = user.gratitudes.new(gratitude_params)
-    # @gratitude.user_id = current_user.id
 
     if @gratitude.save
       render json: @gratitude
@@ -19,17 +18,20 @@ class GratitudesController < ApplicationController
     end
   end
 
+  def update
+    user = current_user
+    gratitude = user.gratitude.find(params[:id])
+    if gratitude.update(gratitude_params["gratitude"])
+      render json: gratitude
+    else
+      render json: gratitude.errors, status: :unprocessable_entity
+    end
+  end
+
   def allgrads
     user = current_user
     @gratitudes = user.gratitudes
   end
-
-  # def allgradsjson
-  #   user = current_user
-  #   gratitudes = user.gratitudes
-  #   render :json => gratitudes.as_json, :status => :ok
-  #
-  # end
 
   def wordcloud
     user = current_user
@@ -54,6 +56,6 @@ class GratitudesController < ApplicationController
   private
 
   def gratitude_params
-    params.require(:gratitude).permit(:description)
+    params.require(:gratitude).permit(:description, :id)
   end
 end

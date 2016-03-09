@@ -15,9 +15,16 @@ var Gratitudes = React.createClass({
 
   deleteRecord: function(gratitude) {
     var gratitudes = this.state.gratitudes.slice();
-    index = gratitudes.indexOf(gratitude);
+    var index = gratitudes.indexOf(gratitude);
     gratitudes.splice(index, 1);
     this.setState({gratitudes: gratitudes});
+  },
+
+  editRecord: function(gratitude) {
+    var gratitudes = this.state.gratitudes.slice();
+    var index = this.state.gratitudes.indexOf(gratitude);
+    gratitudes[index] = data;
+    this.setState({ gratitudes: gratitudes})
   },
 
   render: function() {
@@ -25,7 +32,8 @@ var Gratitudes = React.createClass({
       return (
       <Gratitude key={gratitude.id}
                  gratitude={gratitude}
-                 deleteRecord={this.deleteRecord}/>
+                 deleteRecord={this.deleteRecord}
+                 editRecord={this.editRecord}/>
              );}, this);
 
       return (
