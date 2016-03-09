@@ -11,7 +11,7 @@ $( document ).ready(function() {
   console.log("here are the descriptions" + descString);
 
   var descArray = descString.split(" ");
-  console.log("here is the descSTring split" + descArray);
+  console.log("here is the descString split" + descArray);
   // looks like this: ["stuff", "things", "soup", "eating", "pizza", "Ada!", ""]
 
   var descObjects = [];
@@ -44,15 +44,17 @@ $( document ).ready(function() {
   console.log("here is what tags looks like: " + tags)
 //   console.log("here is the wordcount before:" + wordCount);
 //
-//   var tags1 = [];
-//
-//   wordCount.forEach(function(d) {
-//     console.log("Here is value d" + d);
-//     tags1.push([d.key,parseInt(d.values)]);
-//     console.log("here is the wordcount" + wordCount);
-//   });
-//
-//   console.log("here is tags1" + tags1)
+  var tags = [];
+
+  wordCount.forEach(function(d) {
+    console.log("Here is value d" + d);
+    wordHash = {};
+    wordHash.key = d.key;
+    wordHash.value = parseInt(d.values);
+    tags.push(wordHash);
+    console.log("here is the wordcount" + wordCount);
+  });
+  console.log("here is tags1" + tags);
 //
 //   tags1 = tags1.slice(0,250);
 //
