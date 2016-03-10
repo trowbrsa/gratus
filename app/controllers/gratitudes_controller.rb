@@ -1,5 +1,3 @@
-require 'pry'
-
 class GratitudesController < ApplicationController
   def index
     user = current_user
