@@ -35,6 +35,9 @@ gem 'flickraw'
 # to pass data to JavaScript
 gem 'gon'
 
+# to calculate number of gratitudes added each day
+gem 'has_streak'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

@@ -5,4 +5,5 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_many :gratitudes
   validates_presence_of :first_name
+  has_streak
 end
