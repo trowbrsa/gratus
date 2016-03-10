@@ -5,11 +5,15 @@
  * Copyright (c) 2012 Filament Group, Inc.
  * Licensed under the MIT, GPL licenses.
  */
-
+.body {
+	background-color: white;
+}
 .carousel {
 	width: 100%;
 	position: relative;
+	background-color: white;
 }
+
 .carousel .carousel-item {
 	display: none;
 }
@@ -25,9 +29,5 @@
 }
 
 .carousel .carousel-nav-paginated {
-	background-color: white;
-}
-
-.carousel-item carousel-item-prev {
 	background-color: white;
 }
