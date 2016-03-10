@@ -21,4 +21,19 @@ $( document ).ready(function() {
       $(document).trigger("update.carousel");
     });
   });
+
+	$("#add_img_gratitude").click(function() {
+		// var imgUrl = $(".carousel-active").html().slice(10)
+		$.ajax({
+			method: "POST",
+			url: "/gratitudes/",
+			data: {img_url: $(".carousel-active").html().slice(10)}
+		})
+		.done(function() {
+			console.log("image added as gratitude");
+		})
+		.fail(function() {
+			console.log("image not saved to db");
+		})
+	});
 });

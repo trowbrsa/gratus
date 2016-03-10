@@ -47,9 +47,19 @@ html, body {
 
 }
 
+.next {
+  display: inline-block;
+  background-color: white;
+}
+
+.prev {
+  display: inline-block;
+  background-color: white;
+}
 .slider {
   background-color: white;
 }
+
 
 
 @import './responsive-carousel';

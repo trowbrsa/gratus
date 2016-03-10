@@ -44,6 +44,6 @@ class GratitudesController < ApplicationController
   private
 
   def gratitude_params
-    params.require(:gratitude).permit(:description)
+    params.require(:gratitude).permit(:description, :img_url)
   end
 end
