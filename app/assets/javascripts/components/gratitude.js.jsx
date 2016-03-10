@@ -13,6 +13,8 @@ var Gratitude = React.createClass({
     return(
       <tr>
         <td>{this.props.gratitude.description}</td>
+        <td>{this.props.gratitude.title}</td>
+        <td>{<img src={this.props.gratitude.img_url} class="img-responsive"/>}</td>
         <td><button className="btn btn-danger" type="button" onClick={this.handleDelete}>Remove</button></td>
       </tr>
     );

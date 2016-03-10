@@ -5,7 +5,6 @@ $( document ).ready(function() {
   }
 
   var allgratitudes = gon.gratitudes
-
   var descString = "";
   allgratitudes.forEach(function(d) {
     descString += d.description + " ";
@@ -16,11 +15,13 @@ $( document ).ready(function() {
   var descObjects = [];
 
   descArray.forEach(function(d) {
-    console.log(d);
+    // console.log(d);
+    // if (!d.match("and","of","to","","&","on","the","in","be","for","a","null", "Sunshine", "sunshine")) {
       var descObject = {};
       descObject.description = d;
       descObjects.push(descObject);
-      });
+      // }
+    });
 
     var wordCount = d3.nest()
       .key(function(d) { return d.description; })
