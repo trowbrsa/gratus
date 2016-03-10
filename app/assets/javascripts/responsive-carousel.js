@@ -506,3 +506,16 @@
 		$( ".carousel" ).carousel();
 	});
 }( jQuery ));
+
+// $(window).resize(function(){
+//
+// 	$('.imagestockpile').css({
+// 		position:'relative',
+// 		left: ($(window).width() - $('.className').innerWidth())/2,
+// 		top: ($(window).height() - $('.className').innerHeight())/2
+// 	});
+//
+// });
+//
+// // To initially run the function:
+// $(window).resize();

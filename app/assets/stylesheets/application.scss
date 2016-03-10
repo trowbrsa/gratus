@@ -43,7 +43,14 @@ html, body {
 
 .imagestockpile {
   background-color: white;
+  text-align: center;
+
 }
+
+.slider {
+  background-color: white;
+}
+
 
 @import './responsive-carousel';
 @import './responsive-carousel.slide';
