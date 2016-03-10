@@ -33,7 +33,7 @@ var Gratitudes = React.createClass({
       <Gratitude key={gratitude.id}
                  gratitude={gratitude}
                  deleteRecord={this.deleteRecord}
-                 editRecord={this.editRecord}/>
+                 handleEdit={this.editRecord}/>
              );}, this);
 
       return (

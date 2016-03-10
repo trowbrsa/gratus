@@ -16,18 +16,12 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-sm-12">
       <%= calendar @date do |date| %>
         <%= date.day %>
         <% if @gratitudes[date] %>
-        <ul>
-          <%= @gratitudes[date].length %>
-          <% @gratitudes[date].each do |grad| %>
-            <%= grad.description %>
-            <% params[:date] = date %>
-            <%= link_to "View", dayofgratitude_path(params[:date]) %>
-          <% end %>
-        </ul>
+          <% params[:date] = date %>
+          <%= link_to "View", dayofgratitude_path(params[:date]) %>
       <% end %>
     <% end %>
     </div>
