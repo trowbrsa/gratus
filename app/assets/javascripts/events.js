@@ -27,7 +27,7 @@ $( document ).ready(function() {
 		$.ajax({
 			method: "POST",
 			url: "/gratitudes/",
-			data: {img_url: $(".carousel-active").html().slice(10)}
+			data: {gratitude: {img_url: $(".carousel-active img").attr("src")}}
 		})
 		.done(function() {
 			console.log("image added as gratitude");

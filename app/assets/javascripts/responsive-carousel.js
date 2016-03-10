@@ -413,7 +413,6 @@
 			_createPagination: function(){
 				var nav = $( this ).find( "." + pluginName + "-nav" ),
 					items = $( this ).find( "." + pluginName + "-item" ),
-					pNav = $( "<ol class='" + paginationClass + "'></ol>" ),
 					num, thumb, content, itemType;
 
 				// remove any existing nav
@@ -434,13 +433,13 @@
 				});
 
 
-				if( thumb ){
-					pNav.addClass( pluginName + "-nav-thumbs" );
-				}
+				// if( thumb ){
+				// 	pNav.addClass( pluginName + "-nav-thumbs" );
+				// }
 
 				nav
 					.addClass( pluginName + "-nav-paginated" )
-					.find( "a" ).first().after( pNav );
+					// .find( "a" ).first().after( pNav );
 
 			},
 			_bindPaginationEvents: function(){
@@ -461,16 +460,16 @@
 						}
 					} )
 					// update pagination on page change
-					.bind( "goto." + pluginName, function( e, to  ){
-						to = $( to );
-
-						var index = to ? $( this ).find( "div.carousel-item" ).index( to.get( 0 ) ) : 0;
-
-						$( this ).find( "ol." + paginationClass + " li" )
-							.removeClass( activeClass )
-							.eq( index )
-								.addClass( activeClass );
-					} )
+					// .bind( "goto." + pluginName, function( e, to  ){
+					// 	to = $( to );
+					//
+					// 	var index = to ? $( this ).find( "div.carousel-item" ).index( to.get( 0 ) ) : 0;
+					//
+					// 	$( this ).find( "ol." + paginationClass + " li" )
+					// 		.removeClass( activeClass )
+					// 		.eq( index )
+					// 			.addClass( activeClass );
+					// } )
 					// initialize pagination
 					.trigger( "goto." + pluginName );
 			}

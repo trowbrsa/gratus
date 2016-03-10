@@ -8,6 +8,11 @@
 .body {
 	background-color: white;
 }
+
+a.next {
+	padding: 10px;
+}
+
 .carousel {
 	width: 100%;
 	position: relative;
@@ -16,18 +21,18 @@
 
 .carousel .carousel-item {
 	display: none;
+	padding-bottom: 30px;
+	border: 1px;
+
 }
-.carousel .carousel-active {
+.carousel-item .carousel-active {
 	display: block;
 	background-color: white;
+	padding-bottom: 30px;
 }
 .carousel .carousel-nav:nth-child(2) {
 	display: none;
 }
 .carousel .carousel-slide {
-	background-color: white;
-}
-
-.carousel .carousel-nav-paginated {
 	background-color: white;
 }
