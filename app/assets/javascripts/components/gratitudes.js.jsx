@@ -1,6 +1,6 @@
 var Gratitudes = React.createClass({
   getInitialState: function() {
-    return { gratitudes: this.props.data };
+    return { gratitudes: this.props.gratitudes };
   },
 
   getDefaultProps: function() {

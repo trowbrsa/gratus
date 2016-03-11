@@ -19,7 +19,7 @@ var Gratitude = React.createClass({
 
   handleEdit: function(e) {
     e.preventDefault(e);
-    var data = { description: this.refs.description.value}
+    var data = { description: this.refs.description }
      $.ajax({
        method: 'PUT',
        url: "/gratitudes/" + this.props.gratitude.id,
@@ -43,11 +43,11 @@ var Gratitude = React.createClass({
     );
   },
 
-  render: function() {
-    if (this.state.edit) {
-      return this.GratitudeForm();
-    } else {
-      return this.gratitude();
-    }
-  }
+  // render: function() {
+  //   if (this.state.edit) {
+  //     return this.GratitudeForm();
+  //   } else {
+  //     return this.gratitude();
+  //   }
+  // }
 });
