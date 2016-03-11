@@ -28,10 +28,10 @@ var GratitudeForm = React.createClass({
 
   render: function() {
     return(
-    <form className='form-inline' onSubmit={this.handleSubmit}>
+    <form className='form' onSubmit={this.handleSubmit}>
       <div className = 'form-group'>
         <input type='text' className='form-control'
-          placeholder='Description' name='description'
+          placeholder="I'm grateful for..." name='description'
           value={this.state.description} onChange={this.handleChange}>
         </input>
       </div>

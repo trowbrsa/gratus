@@ -17,8 +17,10 @@ class GratitudesController < ApplicationController
   end
 
   def allgrads
-    user = current_user
-    @gratitudes = user.gratitudes
+    # user = current_user
+    # @gratitudes = user.gratitudes
+
+    @gratitudes = current_user.gratitudes.group_by{ |grad| grad.created_at.to_date }
   end
 
   def wordcloud
