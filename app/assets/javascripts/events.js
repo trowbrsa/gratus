@@ -15,7 +15,6 @@ $( document ).ready(function() {
 
       var content = '<div class="carousel-item"><img src="' + data[0].url + '"/></div>';
 			// var title = '<div class="photo-title"><h3>' + data[0].title + '</h3></div>';
-			console.log(title);
 
       $(".carousel .carousel-item:last").after(content);
 
