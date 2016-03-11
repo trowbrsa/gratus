@@ -1,5 +1,8 @@
 $( document ).ready(function() {
 
+  if (typeof gon === "undefined") {
+    return;
+  }
   var allgratitudes = gon.gratitudes
   console.log("here are the gratitude objects" + allgratitudes)
 
