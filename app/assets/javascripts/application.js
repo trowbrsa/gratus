@@ -30,6 +30,6 @@
 $( document ).ready(function() {
 
   $(".click-to-add").click(function() {
-    window.document.location = $(this).data(':http//localhost:3000/gratitudes')
+    window.document.location = $(this).data('http://www.google.com')
   });
 });
