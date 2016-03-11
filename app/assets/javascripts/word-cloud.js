@@ -4,7 +4,7 @@ $( document ).ready(function() {
     return;
   }
 
-  var allgratitudes = gon.gratitudes
+  var allgratitudes = gon.gratitudes;
   var descString = "";
   allgratitudes.forEach(function(d) {
     descString += d.description + " ";

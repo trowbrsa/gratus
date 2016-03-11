@@ -13,16 +13,19 @@
         <% end %>
       </ul>
 
-    <div>
-      <i class="material-icons">add_circle</i> <%= link_to 'Add a Gratitude', gratitudes_path %>
-    </div>
-
-    <div>
-      <i class="material-icons">favorite</i><%= link_to 'Find Inspiration', events_path %>
-    </div>
-
-    <div>
-      <i class="material-icons">date_range</i><%= link_to 'View Calendar', calendar_path %>
-    </div>
+    <table>
+      <tr class="click-to-add" data-href=':http//localhost:3000/gratitudes'>
+        <td><i class="material-icons">add_circle</i></td>
+        <td><%= link_to 'Add a Gratitude', gratitudes_path %></td>
+      </tr>
+      <tr class="find-inspiration">
+        <td><i class="material-icons">favorite</i></td>
+        <td><%= link_to 'Find Inspiration', events_path %></td>
+      </tr>
+      <tr class="view-calendar">
+          <td><i class="material-icons">date_range</i></td>
+          <td><%= link_to 'View Calendar', calendar_path %></td>
+      </tr>
+    </table>
   </div>
 </div>
