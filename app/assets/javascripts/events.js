@@ -12,9 +12,10 @@ $( document ).ready(function() {
 	$('.carousel').on("beforegoto.carousel", function(){
 		counter++;
     $.get('/events.json?' + $.param({page: counter + 1}), function(data){
-      console.log("this is the data after you click", data);
 
       var content = '<div class="carousel-item"><img src="' + data[0].url + '"/></div>';
+			// var title = '<div class="photo-title"><h3>' + data[0].title + '</h3></div>';
+			console.log(title);
 
       $(".carousel .carousel-item:last").after(content);
 

@@ -2,8 +2,7 @@ class HomeController < ApplicationController
 
   def index
     @total_gratitudes = current_user.gratitudes.length
-    @streak = current_user.streak(:gratitudes)
-
+    @streak = current_user.streak(:gratitudes) 
   end
 
   def account

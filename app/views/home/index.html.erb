@@ -8,7 +8,9 @@
     <h3> Here are your gradstats: </h3>
       <ul>
         <li>You have <b><%= @total_gratitudes %></b> total gratitudes recorded!</li>
+        <% if !@streak.nil? %>
         <li>Your gratitude streak: <%= @streak %></li>
+        <% end %>
       </ul>
 
     <div>
