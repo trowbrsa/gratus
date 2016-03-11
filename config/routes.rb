@@ -3,8 +3,6 @@ Rails.application.routes.draw do
   devise_for :users, :controllers => { registrations: 'registrations' }
   root 'home#index'
 
-  get '/home/myaccount' => 'home#account'
-
   get '/events/' => 'events#show'
   get '/dayofgratitude/:date' => 'gratitudes#date', as: :dayofgratitude
   get '/mygratitudes/' => 'gratitudes#allgrads'
