@@ -1,11 +1,13 @@
 class HomeController < ApplicationController
 
+  skip_before_action :authenticate_user!, only: [:splash]
+
   def index
     @total_gratitudes = current_user.gratitudes.length
-    @streak = current_user.streak(:gratitudes) 
+    @streak = current_user.streak(:gratitudes)
   end
 
-  def account
+  def splash
 
   end
 
