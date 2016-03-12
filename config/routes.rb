@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
 
   devise_for :users, :controllers => { registrations: 'registrations' }
-  root 'home#splash'
+
+  authenticated :user do
+  root to: "home#index", as: :authenticated_root
+  end
+
+  unauthenticated do
+    root to: "home#splash"
+  end
+  # root 'home#splash'
 
   get '/events/' => 'events#show'
   get '/dayofgratitude/:date' => 'gratitudes#date', as: :dayofgratitude
