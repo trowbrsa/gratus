@@ -11,6 +11,10 @@ class HomeController < ApplicationController
 
   end
 
+  def about
+
+  end
+
   def letsencrypt
    render plain: ENV['LE_AUTH_RESPONSE']
   end

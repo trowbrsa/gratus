@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get '/allgratitudes/' => 'gratitudes#allgradsjson'
   get '/wordcloud/' => 'gratitudes#wordcloud'
   get "/.well-known/acme-challenge/#{ENV['LE_AUTH_REQUEST']}", to: 'home#letsencrypt'
-
+  get '/about/' => 'home#about'
 
 
   resources :gratitudes
