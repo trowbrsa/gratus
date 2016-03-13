@@ -5,22 +5,20 @@ $( document ).ready(function() {
   }
 
   var allgratitudes = gon.gratitudes;
-  var descString = "";
-  allgratitudes.forEach(function(d) {
-    descString += d.description + " ";
-  });
+  // var descString = "";
+  // allgratitudes.forEach(function(d) {
+  //   descString += d.description + " ";
+  // });
 
-  var descArray = descString.split(" ");
+  // var descArray = descString.split(" ");
 
   var descObjects = [];
 
-  descArray.forEach(function(d) {
-    // console.log(d);
-    // if (!d.match("and","of","to","","&","on","the","in","be","for","a","null", "Sunshine", "sunshine")) {
+  allgratitudes.forEach(function(d) {
+    console.log(d);
       var descObject = {};
       descObject.description = d;
       descObjects.push(descObject);
-      // }
     });
 
     var wordCount = d3.nest()

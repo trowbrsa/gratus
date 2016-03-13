@@ -25,7 +25,15 @@ class GratitudesController < ApplicationController
 
   def wordcloud
     user = current_user
-    gon.gratitudes = user.gratitudes
+    parsed_gratitudes = []
+    removed_terms = ['the', 'and', 'or',"to","","&","on","the","in","be","for","a","null"]
+    user.gratitudes.each do |grad|
+      if grad.description?
+        parsed_gratitudes.push(grad.description.downcase)
+      end
+    end
+    parsed_gratitudes = parsed_gratitudes - removed_terms
+    gon.gratitudes = parsed_gratitudes
   end
 
   def date

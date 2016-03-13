@@ -13,8 +13,7 @@ $( document ).ready(function() {
 		counter++;
     $.get('/events.json?' + $.param({page: counter + 1}), function(data){
 
-      var content = '<div class="carousel-item"><img src="' + data[0].url + '"/></div>';
-			// var title = '<div class="photo-title"><h3>' + data[0].title + '</h3></div>';
+      var content = '<div class="carousel-item"><img src="' + data[0].url + '"/><div class="photo-title"><h3>' + data[0].title + '</h3></div></div>';
 
       $(".carousel .carousel-item:last").after(content);
 
