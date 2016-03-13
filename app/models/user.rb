@@ -6,4 +6,9 @@ class User < ActiveRecord::Base
   has_many :gratitudes
   validates_presence_of :first_name
   has_streak
+
+  # def best_streak
+  #   return self.streak(:gratitudes)
+  # end
+
 end

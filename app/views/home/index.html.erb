@@ -2,16 +2,7 @@
   <%= render 'layouts/navbar' %>
   <div class="container">
 
-
-    <h1>Gratus</h1>
-    <h2 class="home-head">Welcome, <%= current_user.first_name %>!</h2>
-    <h3> Here are your gradstats: </h3>
-      <ul>
-        <li>You have <b><%= @total_gratitudes %></b> total gratitudes recorded!</li>
-        <% if !@streak.nil? %>
-        <li>Your gratitude streak: <%= @streak %></li>
-        <% end %>
-      </ul>
+    <h3 class="home-head">Welcome, <%= current_user.first_name %>!</h3>
 
     <table>
       <tr class="click-to-add" data-href='http://www.gratus.io/gratitudes'>
@@ -25,6 +16,20 @@
       <tr class="view-calendar" data-href='http://www.gratus.io/calendar'>
           <td><i class="material-icons">date_range</i></td>
           <td><%= link_to 'View Calendar', calendar_path %></td>
+      </tr>
+    </table>
+
+    <h3>Track how often you're posting your gratitudes</h3>
+    <table>
+      <tr>
+        <th>Total Gratitudes Recorded</th>
+        <th>Best Streak</th>
+        <th>Current streak</th>
+      </tr>
+      <tr>
+        <td><%= @total_gratitudes %></td>
+        <td><%= @best_streak %> days</td>
+        <td><%= @streak %></td>
       </tr>
     </table>
   </div>
