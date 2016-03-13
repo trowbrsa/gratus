@@ -23,12 +23,12 @@
     <table>
       <tr>
         <th>Total Gratitudes Recorded</th>
-        <th>Best Streak</th>
+        <th>Longest Streak</th>
         <th>Current streak</th>
       </tr>
       <tr>
         <td><%= @total_gratitudes %></td>
-        <td><%= @best_streak %> days</td>
+        <td><%= @best_streak %><%= @best_streak_day %></td>
         <td><%= @streak %></td>
       </tr>
     </table>

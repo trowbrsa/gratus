@@ -13,5 +13,14 @@ class User < ActiveRecord::Base
       self.save
       return self.best_streak
     end
+    return self.best_streak
+  end
+
+  def day_grammar
+    if self.best_streak == 1
+      return "day"
+    else
+      return "days"
+    end
   end
 end
