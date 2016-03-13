@@ -7,8 +7,11 @@ class User < ActiveRecord::Base
   validates_presence_of :first_name
   has_streak
 
-  # def best_streak
-  #   return self.streak(:gratitudes)
-  # end
-
+  def best_user_streak
+    if self.streak(:gratitudes) > self.best_streak
+      self.best_streak = self.streak(:gratitudes)
+      self.save
+      return self.best_streak
+    end
+  end
 end
