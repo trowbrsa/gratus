@@ -25,7 +25,7 @@ $( document ).ready(function() {
 		$.ajax({
 			method: "POST",
 			url: "/gratitudes/",
-			data: {gratitude: {img_url: $(".carousel-active img").attr("src")}}
+			data: {gratitude: {img_url: $(".carousel-active img").attr("src")}, description: $(".photo-title").attr("h3")}
 		})
 	});
 });

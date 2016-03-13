@@ -68,7 +68,9 @@ html, body {
   font-size: 40px;
 }
 
-
+img {
+      max-width: 100%;
+    }
 
 @import './responsive-carousel';
 @import './responsive-carousel.slide';
