@@ -6,7 +6,8 @@ class HomeController < ApplicationController
     @total_gratitudes = current_user.gratitudes.length
     current_user.streak(:gratitudes).nil? ? @streak = "Add a gratitude!" : @streak = current_user.streak(:gratitudes)
     @best_streak = current_user.best_user_streak
-    @best_streak_day = current_user.day_grammar
+    @best_streak_day = current_user.best_streak_grammar
+    @current_streak_day = current_user.current_streak_grammar
   end
 
   def splash

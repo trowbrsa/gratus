@@ -19,18 +19,23 @@
       </tr>
     </table>
 
-    <h3>Track how often you're posting your gratitudes</h3>
-    <table>
-      <tr>
-        <th>Total Gratitudes Recorded</th>
-        <th>Longest Streak</th>
-        <th>Current streak</th>
-      </tr>
-      <tr>
-        <td><%= @total_gratitudes %></td>
-        <td><%= @best_streak %><%= @best_streak_day %></td>
-        <td><%= @streak %></td>
-      </tr>
-    </table>
+    <br>
+    <div class="row col-md-6">
+      <table class="table">
+        <div>
+          <h4>Track how often you're posting your gratitudes</h4>
+        </div>
+        <tr>
+          <th>Total Gratitudes Recorded</th>
+          <th>Longest Streak</th>
+          <th>Current streak</th>
+        </tr>
+        <tr>
+          <td><%= @total_gratitudes %></td>
+          <td><%= @best_streak %> <%= @best_streak_day %></td>
+          <td><%= @streak %> <%= @current_streak_day %></td>
+        </tr>
+      </table>
+    </div>
   </div>
 </div>

@@ -16,11 +16,20 @@ class User < ActiveRecord::Base
     return self.best_streak
   end
 
-  def day_grammar
+  def best_streak_grammar
     if self.best_streak == 1
       return "day"
     else
       return "days"
     end
   end
+
+  def current_streak_grammar
+    if self.streak(:gratitudes) == 1
+      return "day"
+    else
+      return "days"
+    end
+  end
+
 end

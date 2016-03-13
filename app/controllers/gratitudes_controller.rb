@@ -17,19 +17,16 @@ class GratitudesController < ApplicationController
   end
 
   def allgrads
-    # user = current_user
-    # @gratitudes = user.gratitudes
-
     @gratitudes = current_user.gratitudes.group_by{ |grad| grad.created_at.to_date }
   end
 
   def wordcloud
     user = current_user
     parsed_gratitudes = []
-    removed_terms = ['the', 'and', 'or',"to","","&","on","the","in","be","for","a","null"]
+    removed_terms = ['the','and','or',"to","","&","on","the","with","in","be","for","a","null"]
     user.gratitudes.each do |grad|
       if grad.description?
-        parsed_gratitudes.push(grad.description.downcase)
+        parsed_gratitudes.push(grad.description.downcase.gsub(/[^a-z0-9\s]/i, ''))
       end
     end
     parsed_gratitudes = parsed_gratitudes - removed_terms
