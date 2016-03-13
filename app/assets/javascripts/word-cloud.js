@@ -5,16 +5,16 @@ $( document ).ready(function() {
   }
 
   var allgratitudes = gon.gratitudes;
-  // var descString = "";
-  // allgratitudes.forEach(function(d) {
-  //   descString += d.description + " ";
-  // });
+  var descString = "";
+  allgratitudes.forEach(function(d) {
+    descString += d + " ";
+  });
 
-  // var descArray = descString.split(" ");
+  var descArray = descString.split(" ");
 
   var descObjects = [];
 
-  allgratitudes.forEach(function(d) {
+  descArray.forEach(function(d) {
     console.log(d);
       var descObject = {};
       descObject.description = d;
