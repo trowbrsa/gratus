@@ -31,6 +31,7 @@ var Gratitudes = React.createClass({
       return (
       <div className='gratitudes'>
         <GratitudeForm handleNewRecord={this.addRecord} />
+        <br></br>
         <table className='table table-bordered'>
           <tbody>
             {Grads}

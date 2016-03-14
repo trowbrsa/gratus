@@ -7,7 +7,7 @@
   <% @gratitudes.each do |date, grads| %>
     <h3> <%= date.strftime('%A') %>, <%= date.strftime('%B') %> <%= date.strftime('%d')%> </h3>
     <% grads.each do |grad| %>
-      <%= grad.description %>
+      <%= grad.description %><br>
       <% if !grad.img_url.nil? %>
         <%= image_tag(grad.img_url) %>
       <% end %>

@@ -11,11 +11,15 @@
      <a class="navbar-brand" href="#">Gratus</a>
      </div>
 
+
+
+
+
      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
      <ul class="nav navbar-nav">
-       <li class="active"><a href="/">Home<span class="sr-only">(current)</span></a></li>
-       <li><a href="/gratitudes/">Add A Gratitude</a></li>
-       <li><a href="/events/">Get Inspired</a></li>
+       <li class="<%= 'active' if params[:controller] == 'home' %>"><a href="/">Home</a></li>
+       <li class="<%= 'active' if params[:controller] == 'gratitudes' %>"><a href="/gratitudes">Add A Gratitude</a></li>
+       <li class="<%= 'active' if params[:controller] == 'events' %>"><a href="/events">Get Inspired</a></li>
        <li class="View Gratitudes">
        <a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">View Gratitudes<span class="caret"></span></a>
        <ul class="dropdown-menu">
@@ -24,9 +28,8 @@
        <li><a href="/wordcloud/">View Wordcloud</a></li>
      </ul>
      </li>
-      <li><a href="/about/">About</a></li>
+     <li class="<%= 'active' if params[:controller] == 'about' %>"><a href="/about">About</a></li>
      </ul>
-     <!-- code for the right side of the navbar -->
      <ul class="nav navbar-nav navbar-right">
      <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %> </a></li>
      <li class="dropdown">

@@ -1,11 +1,14 @@
 <%= render 'layouts/navbar' %>
 <div class="container">
   <% t = Time.now %>
-  <h2> <%= t.strftime('%A') %>, <%= t.strftime('%B') %> <%= t.strftime('%d') %> </h2>
-  <h3>Add 3 (or more!) things you are grateful for:</h3>
-
+  <h2>What are you grateful for today?</h2>
+  <br>
   <%= react_component 'Gratitudes', {data: @gratitudes } %>
 
-  <h2>Or, click on the below button to get inspired!</h2>
-  <%= link_to "Get inspired!", events_path %>
-</div>
+  <h4>Or, click below button to get inspired!</h4>
+  <table>
+    <tr class="find-inspiration" data-href='http://www.gratus.io/events'>
+      <td><i class="material-icons">favorite</i></td>
+      <td><%= link_to 'Find Inspiration', events_path %></td>
+    </tr>
+  </table>
