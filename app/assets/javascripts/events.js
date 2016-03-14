@@ -28,9 +28,11 @@ $( document ).ready(function() {
 			data: {gratitude: {img_url: $(".carousel-active img").attr("src")}, description: $(".photo-title").attr("h3")}
 		})
 		$(this).text("Gratitude Added!");
+		$(this).attr('class', 'btn btn-success center-block');
 	});
 
-	// function addGrad() {
-	// 	document.getElementById("add_img_gratitude").innerHTML = "Gratitude Added!";
-	// }
+	// $("#next").click(function(){
+	// 	$("#add_img_gratitude").toggleClass('class', 'btn btn-default center-block');
+	// })
+
 });

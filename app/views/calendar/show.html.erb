@@ -20,7 +20,13 @@
       <%= calendar @date do |date| %>
         <%= date.day %>
         <% if @gratitudes[date] %>
-          <span class="date-filled"><%= @gratitudes[date].length %></span>
+          <% if @gratitudes[date].length == 1 %>
+            <span class="1grad"></span>
+          <% elsif @gratitudes[date].length > 1 && @gratitudes[date].length < 4 %>
+            <span class="twotofourgrads"></span>
+          <% else %>
+            <span class="multigrad"></span>
+          <% end %>
           <% params[:date] = date %>
           <%= link_to "View", dayofgratitude_path(params[:date]) %>
       <% end %>
