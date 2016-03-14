@@ -73,6 +73,21 @@ img {
       max-width: 100%;
     }
 
+.splash {
+  background-image: url('splash_1.jpeg');
+  background-repeat: no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#overview-header {
+}
+
+p.splash-header {
+  font-size: 32;
+  color: gray;
+}
 
 @import './responsive-carousel';
 @import './responsive-carousel.slide';

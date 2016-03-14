@@ -1,3 +1,39 @@
-<h1>Gratus</h1>
+<div class="splash">
+  <div class="container">
+    <div id="overview-header">
+      <p class="splash-header">Gratus</p>
+      <img src="../../assets/Logo.png" alt="Gratus Logo" height="100">
+    </div>
 
-<%= link_to "Sign up here", new_user_registration_path %>
+    <p>Ralph Waldo Emerson wrote, "Cultivate the habit of being grateful for every good thing that comes to you, and to give thanks continuously. And because all things have contributed to your advancement, you should include all things in your gratitude."</p>
+    <p>Gratus is a free, mobile-friendly site to help instill a greater sense of gratitude by helping track the daily gratitudes of life.</p>
+    <p>Take the Gratus challenge! Identify three things you are grateful for every day for one month. You may notice that within one month, your overall sense of gratitude has been grateful increased.</p>
+    <p>Gratus helps you track your daily gratitudes with an interactive calendar. You can also visualize themes as you post more gratitudes with the Gratus wordcloud.</p>
+
+    <%= link_to "Sign up here", new_user_registration_path %>
+
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password %><br />
+        <%= f.password_field :password, autocomplete: "off" %>
+      </div>
+
+      <% if devise_mapping.rememberable? -%>
+        <div class="field">
+          <%= f.check_box :remember_me %>
+          <%= f.label :remember_me %>
+        </div>
+      <% end %>
+
+      <div class="actions">
+        <%= f.submit "Log in" %>
+      </div>
+    <% end %>
+
+  </div>
+</div>
