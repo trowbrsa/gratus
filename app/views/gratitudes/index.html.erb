@@ -1,6 +1,5 @@
 <%= render 'layouts/navbar' %>
 <div class="container">
-
   <% t = Time.now %>
   <h2> <%= t.strftime('%A') %>, <%= t.strftime('%B') %> <%= t.strftime('%d') %> </h2>
   <h3>Add 3 (or more!) things you are grateful for:</h3>
@@ -8,6 +7,5 @@
   <%= react_component 'Gratitudes', {data: @gratitudes } %>
 
   <h2>Or, click on the below button to get inspired!</h2>
-
   <%= link_to "Get inspired!", events_path %>
 </div>

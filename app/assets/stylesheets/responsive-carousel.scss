@@ -6,41 +6,67 @@
  * Licensed under the MIT, GPL licenses.
  */
 .body {
-	background-color: white;
+	background-color: #efefef;
+}
+
+.events-background-color {
+	background-color: #efefef;
 }
 
 a.next {
 	padding: 10px;
+	background-color: #efefef;
+}
+
+a.prev {
+	background-color: #efefef;
 }
 
 .carousel {
 	width: 100%;
 	position: relative;
-	background-color: white;
+	background-color: #efefef;
 }
 
-.carousel .carousel-item {
+.carousel-item {
 	display: none;
 	padding-bottom: 30px;
 	border: 1px;
+	height: 350px;
+	background-color: #efefef!important;
+}
+// .carousel-item .carousel-active {
+// 	display: block;
+// 	background-color: #efefef!important;
+// 	height: 350px;
+// }
 
+.carousel-item .carousel-item-active {
+	background-color: #efefef;
 }
-.carousel-item .carousel-active {
-	display: block;
-	background-color: white;
-	padding-bottom: 30px;
+
+.carousel-item .carousel-item-prev {
+	background-color: #efefef;
 }
+
 .carousel .carousel-nav:nth-child(2) {
 	display: none;
+	height: 350px;
+	background-color: #efefef;
 }
 .carousel .carousel-slide {
-	background-color: white;
+	background-color: #efefef;
+	height: 350px;
 }
 
 .carousel-nav .carousel-nav-paginated {
-	background-color: white;
+	background-color: #efefef;
 }
 
 .add_img_gratitude {
-	background-color: white;
+	background-color: #efefef;
+}
+
+img {
+	max-height: 300px;
 }

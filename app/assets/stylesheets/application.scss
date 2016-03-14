@@ -5,6 +5,7 @@ html, body {
   font-family: 'Nobile', sans-serif;
   height: 100%;
   width: 100%;
+  background-color: #efefef;
 }
 
 .background_image {
@@ -71,6 +72,7 @@ html, body {
 img {
       max-width: 100%;
     }
+
 
 @import './responsive-carousel';
 @import './responsive-carousel.slide';
