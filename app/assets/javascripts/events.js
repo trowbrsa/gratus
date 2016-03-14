@@ -27,5 +27,10 @@ $( document ).ready(function() {
 			url: "/gratitudes/",
 			data: {gratitude: {img_url: $(".carousel-active img").attr("src")}, description: $(".photo-title").attr("h3")}
 		})
+		$(this).text("Gratitude Added!");
 	});
+
+	// function addGrad() {
+	// 	document.getElementById("add_img_gratitude").innerHTML = "Gratitude Added!";
+	// }
 });
