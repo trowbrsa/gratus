@@ -22,13 +22,15 @@ class GratitudesController < ApplicationController
 
   def wordcloud
     user = current_user
-    parsed_gratitudes = []
-    removed_terms = ['the','and','or',"to","","&","on","the","with","in","be","for","a","null"]
+    array_of_gratitudes = []
+    removed_terms = ['the','and','or', 'is', "of, ""to","","&","on","the","with","in","be","for","a","null"]
     user.gratitudes.each do |grad|
       if grad.description?
-        parsed_gratitudes.push(grad.description.downcase.gsub(/[^a-z0-9\s]/i, ''))
+        array_of_gratitudes.push(grad.description.downcase.gsub(/[^a-z0-9\s]/i, ''))
       end
     end
+    array_of_gratitudes = array_of_gratitudes.join(" ")
+    parsed_gratitudes = array_of_gratitudes.split(" ")
     parsed_gratitudes = parsed_gratitudes - removed_terms
     gon.gratitudes = parsed_gratitudes
   end

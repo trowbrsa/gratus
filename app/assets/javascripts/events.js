@@ -31,8 +31,13 @@ $( document ).ready(function() {
 		$(this).attr('class', 'btn btn-success center-block');
 	});
 
-	// $("#next").click(function(){
-	// 	$("#add_img_gratitude").toggleClass('class', 'btn btn-default center-block');
-	// })
+	$(".next").click(function(){
+		$("#add_img_gratitude").attr('class', 'btn btn-default center-block');
+		$("#add_img_gratitude").text('Add this as a gratitude');
+	})
+
+	// $(".prev").click(function(){
+	// 	$("#add_img_gratitude").attr('class', 'btn btn-default center-block');
+	// 	$("#add_img_gratitude").text('Add this as a gratitude');
 
 });
