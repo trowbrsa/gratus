@@ -36,8 +36,8 @@ $( document ).ready(function() {
 		$("#add_img_gratitude").text('Add this as a gratitude');
 	})
 
-	// $(".prev").click(function(){
-	// 	$("#add_img_gratitude").attr('class', 'btn btn-default center-block');
-	// 	$("#add_img_gratitude").text('Add this as a gratitude');
-
+	$(".prev").click(function(){
+		$("#add_img_gratitude").attr('class', 'btn btn-default center-block');
+		$("#add_img_gratitude").text('Add this as a gratitude');
+	})
 });
