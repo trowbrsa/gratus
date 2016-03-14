@@ -82,11 +82,34 @@ img {
 }
 
 #overview-header {
+  width: 100%;
+  background-color: white;
+  height: 100px;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 p.splash-header {
-  font-size: 32;
+  font-size: 32px;
   color: gray;
+  display: inline-block;
+}
+
+.logo-splash {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.form-inline {
+  display: inline-block;
+}
+
+.current-user {
+  display: inline-block;
 }
 
 @import './responsive-carousel';
