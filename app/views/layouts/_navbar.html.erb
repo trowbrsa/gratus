@@ -17,7 +17,7 @@
 
      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
      <ul class="nav navbar-nav">
-       <li class="<%= 'active' if params[:controller] == 'home' %>"><a href="/">Home</a></li>
+       <li class="<%= 'active' if current_page?(authenticated_root_path) %>"><%= link_to "Home", authenticated_root_path %></li>
        <li class="<%= 'active' if params[:controller] == 'gratitudes' %>"><a href="/gratitudes">Add A Gratitude</a></li>
        <li class="<%= 'active' if params[:controller] == 'events' %>"><a href="/events">Get Inspired</a></li>
        <li class="View Gratitudes">
@@ -28,7 +28,7 @@
        <li><a href="/wordcloud/">View Wordcloud</a></li>
      </ul>
      </li>
-     <li class="<%= 'active' if params[:controller] == 'about' %>"><a href="/about">About</a></li>
+     <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "About", about_path %></li>
      </ul>
      <ul class="nav navbar-nav navbar-right">
      <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %> </a></li>
