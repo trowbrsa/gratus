@@ -35,19 +35,20 @@ var Gratitude = React.createClass({
 
   render: function() {
     return(
-      <tr>
-        <td>{this.props.gratitude.description}</td>
-        <td><button className="btn btn-danger" type="button" onClick={this.handleDelete}>Remove</button></td>
-        <td><button className="btn btn-primary" type="button" onClick={this.handleToggle}>Edit</button></td>
-    </tr>
+      <div class="row">
+        <div class="col-xs-8">{this.props.gratitude.description}</div>
+        <div class="col-xs-2"><button className="btn btn-danger" type="button" onClick={this.handleDelete}>Remove</button></div>
+        <div class="col-xs-2"><button className="btn btn-primary" type="button" onClick={this.handleToggle}>Edit</button></div>
+      </div>
     );
   },
 
-  // render: function() {
-  //   if (this.state.edit) {
-  //     return this.GratitudeForm();
-  //   } else {
-  //     return this.gratitude();
-  //   }
+  render: function() {
+    if (this.state.edit) {
+      var content = this.state.edit ? this.displayEditForm : this.displayGratitudeRow;
+      return (
+        {content}
+  //     );
+    }
   // }
 });

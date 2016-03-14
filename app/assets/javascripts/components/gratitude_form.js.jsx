@@ -20,7 +20,7 @@ var GratitudeForm = React.createClass({
       { gratitude: this.state },
       function(data) {
         this.props.handleNewRecord(data);
-        this.setState(this.getInitialState());
+        this.setState({description: ''});
         }.bind(this),
         'JSON'
     );
