@@ -5,7 +5,10 @@
 
 <ul>
   <% @gratitudes.each do |date, grads| %>
-    <h3> <%= date.strftime('%A') %>, <%= date.strftime('%B') %> <%= date.strftime('%d')%> </h3>
+    <% params[:date] = date %>
+    <%= link_to dayofgratitude_path(params[:date]) do %>
+      <h3> <%= date.strftime('%A') %>, <%= date.strftime('%B') %> <%= date.strftime('%d') %> </h3>
+    <% end %>
     <% grads.each do |grad| %>
       <%= grad.description %><br>
       <% if !grad.img_url.nil? %>
