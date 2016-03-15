@@ -24,8 +24,13 @@ var Gratitudes = React.createClass({
     var gratitudes = this.state.gratitudes.slice();
     var index = this.state.gratitudes.indexOf(gratitude);
     gratitudes[index] = data;
-    this.setState({ gratitudes: gratitudes})
+    this.setState({ gratitudes: gratitudes});
   },
+
+  onUpdate(gratitude) {
+    this.props.handleUpdate(gratitude);
+  },
+
 
   render: function() {
     var Grads = this.state.gratitudes.map(function(gratitude) {
@@ -33,17 +38,17 @@ var Gratitudes = React.createClass({
       <Gratitude key={gratitude.id}
                  gratitude={gratitude}
                  deleteRecord={this.deleteRecord}
-                 handleEdit={this.editRecord}/>
+                 handleUpdate={this.onUpdate}/>
              );}, this);
 
       return (
       <div className='gratitudes'>
         <GratitudeForm handleNewRecord={this.addRecord} />
-        <table className='table table-bordered'>
-          <tbody>
+        <div className='table table-bordered'>
+          <div>
             {Grads}
-          </tbody>
-        </table>
+          </div>
+        </div>
       </div>
     );
   }
