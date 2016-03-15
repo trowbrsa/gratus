@@ -5,10 +5,13 @@
   <br>
   <%= react_component 'Gratitudes', {data: @gratitudes } %>
 
-  <h4>Or, click below button to get inspired!</h4>
-  <table>
+  <h4 class="inspo-description">Or, click below to get inspired!</h4>
+  <table class="find-inspo">
     <tr class="find-inspiration" data-href='http://www.gratus.io/events'>
       <td><i class="material-icons">favorite</i></td>
-      <td><%= link_to 'Find Inspiration', events_path %></td>
+      <td><%= link_to 'Find Inspiration', events_path, class:"inspo-link" %></td>
     </tr>
   </table>
+</div>
+<br>
+<br>

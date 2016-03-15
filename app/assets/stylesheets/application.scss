@@ -124,5 +124,21 @@ p.splash-description {
   vertical-align: center;
 }
 
+.inspo-description {
+  text-align: center;
+}
+
+.find-inspo {
+  background-color: gray;
+  border: 1px;
+  border-radius: 5px;
+  padding: 3px;
+  margin: auto;
+}
+
+.inspo-link {
+  padding-right: 5px;
+}
+
 @import './responsive-carousel';
 @import './responsive-carousel.slide';

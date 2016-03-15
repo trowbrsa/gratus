@@ -17,5 +17,4 @@ var Gratitude = React.createClass({
       </tr>
     );
   }
-
 });
