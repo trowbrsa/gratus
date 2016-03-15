@@ -30,15 +30,15 @@
 $( document ).ready(function() {
 
   $(".click-to-add").click(function() {
-    window.document.location = $(this).data('href')
+    window.document.location = $(this).data('href');
   });
 
   $(".find-inspiration").click(function() {
-    window.document.location = $(this).data('href')
+    window.document.location = $(this).data('href');
   });
 
   $(".view-calendar").click(function() {
-    window.document.location = $(this).data('href')
+    window.document.location = $(this).data('href');
   });
 
   $(".click-to-add").hover(function() {
