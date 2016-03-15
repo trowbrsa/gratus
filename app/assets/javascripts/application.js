@@ -17,8 +17,6 @@
 //= require react_ujs
 //= require components
 //= require responsive-carousel
-//= require responsive-carousel.touch
-//= require responsive-carousel.drag
 //= require responsive-carousel.autoinit
 //= require d3
 //= require d3.layout.cloud
