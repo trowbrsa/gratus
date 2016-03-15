@@ -108,5 +108,17 @@ p.splash-description {
   text-align: center;
 }
 
+@media only screen and (max-width: 480px) {
+  .full-calendar {
+    font-size: 9px;
+ }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 565px) {
+  .full-calendar {
+    font-size: 11px;
+ }
+}
+
 @import './responsive-carousel';
 @import './responsive-carousel.slide';

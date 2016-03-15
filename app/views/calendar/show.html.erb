@@ -2,35 +2,37 @@
 <div class="container">
 
   <h1> Gratitude Calendar </h1>
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <div class="well controls">
-        <%= link_to calendar_path(date: @date - 1.month), class: "btn btn-default" do %>
-          <i class="glyphicon glyphicon-backward"></i>
-        <% end %>
-        <%= "#{@date.strftime("%B")} #{@date.year}" %>
-        <%= link_to calendar_path(date: @date + 1.month), class: "btn btn-default" do %>
-          <i class="glyphicon glyphicon-forward"></i>
-        <% end %>
+  <div class="full-calendar">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="well controls">
+          <%= link_to calendar_path(date: @date - 1.month), class: "btn btn-default" do %>
+            <i class="glyphicon glyphicon-backward"></i>
+          <% end %>
+          <%= "#{@date.strftime("%B")} #{@date.year}" %>
+          <%= link_to calendar_path(date: @date + 1.month), class: "btn btn-default" do %>
+            <i class="glyphicon glyphicon-forward"></i>
+          <% end %>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <%= calendar @date do |date| %>
-        <%= date.day %>
-        <% if @gratitudes[date] %>
-          <% if @gratitudes[date].length == 1 %>
-            <span class="1grad"></span>
-          <% elsif @gratitudes[date].length > 1 && @gratitudes[date].length < 4 %>
-            <span class="twotofourgrads"></span>
-          <% else %>
-            <span class="multigrad"></span>
-          <% end %>
-          <% params[:date] = date %>
-          <%= link_to "View", dayofgratitude_path(params[:date]) %>
+    <div class="row">
+      <div class="col-md-12">
+        <%= calendar @date do |date| %>
+          <%= date.day %>
+          <% if @gratitudes[date] %>
+            <% if @gratitudes[date].length == 1 %>
+              <span class="1grad"></span>
+            <% elsif @gratitudes[date].length > 1 && @gratitudes[date].length < 4 %>
+              <span class="twotofourgrads"></span>
+            <% else %>
+              <span class="multigrad"></span>
+            <% end %>
+            <% params[:date] = date %>
+            <%= link_to "View", dayofgratitude_path(params[:date]) %>
+        <% end %>
       <% end %>
-    <% end %>
+      </div>
     </div>
   </div>
 </div>
