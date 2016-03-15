@@ -41,4 +41,20 @@ $( document ).ready(function() {
     window.document.location = $(this).data('href')
   });
 
+  $(".click-to-add").hover(function() {
+    $(this).css("color", "#337ab7");
+    }, function() {
+      $(this).css("color", "black");
+  });
+
+  $(".find-inspiration").hover(function() {
+    $(this).css("color", "#337ab7");
+    }, function() {
+      $(this).css("color", "black");
+  });
+  $(".view-calendar").hover(function() {
+    $(this).css("color", "#337ab7");
+    }, function() {
+      $(this).css("color", "black");
+  });
 });
