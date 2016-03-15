@@ -20,7 +20,7 @@ var Gratitude = React.createClass({
   handleEdit() {
     if (this.state.edit) {
       var gratitude = this.refs.description.value;
-      console.log('in handleEditToggle', this.state.edit, gratitude);
+      console.log('in handleEdit', this.state.edit, gratitude);
     }
     this.setState({edit: !this.state.edit});
   },
