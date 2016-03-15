@@ -1,9 +1,11 @@
 <div class="splash">
-    <div id="overview-header">
-      <span class="helper"></span><img src="../../assets/Logo.png" alt="Gratus Logo" class="logo-splash" height="50">
       <span class="helper"></span><p class="splash-header">Gratus</p>
+      <div class="container">
+        <p class="splash-description">Gratus is a free, mobile-friendly site to help instill a greater sense of gratitude by helping track the daily gratitudes of life.</p>
+        <%= link_to "Sign up here", new_user_registration_path %></p>
+    </div>
       <div class="current-user">
-        <%= form_for(resource, :html => {:class => "form-inline"}, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <%= form_for(resource, :html => {:class => "form"}, as: resource_name, url: session_path(resource_name)) do |f| %>
           <div class="form-group">
             <%= f.label :email %><br />
             <%= f.email_field :email, autofocus: true %>
@@ -22,15 +24,5 @@
         </div>
       </div>
 
-    <div class="container">
-    <p>Ralph Waldo Emerson wrote, "Cultivate the habit of being grateful for every good thing that comes to you, and to give thanks continuously. And because all things have contributed to your advancement, you should include all things in your gratitude."</p>
-    <p>Gratus is a free, mobile-friendly site to help instill a greater sense of gratitude by helping track the daily gratitudes of life.</p>
-    <p>Take the Gratus challenge! Identify three things you are grateful for every day for one month. You may notice that within one month, your overall sense of gratitude has been grateful increased.</p>
-    <p>Gratus helps you track your daily gratitudes with an interactive calendar. You can also visualize themes as you post more gratitudes with the Gratus wordcloud.</p>
 
-    <%= link_to "Sign up here", new_user_registration_path %>
-
-
-
-  </div>
 </div>

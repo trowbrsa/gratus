@@ -76,47 +76,50 @@ img {
     }
 
 .splash {
-  background-image: url('splash_1.jpeg');
+  background-image: url('splash_1_57op.jpg');
   background-repeat: no-repeat center center;
   background-size: cover;
   height: 100%;
   width: 100%;
+  font: white;
 }
 
-#overview-header {
-  width: 100%;
-  background-color: white;
-  height: 100px;
-}
-
-.helper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
+// #overview-header {
+//   width: 100%;
+//   background-color: white;
+//   height: 100px;
+// }
+//
+// .helper {
+//     display: inline-block;
+//     height: 100%;
+//     vertical-align: middle;
+// }
 
 p.splash-header {
   font-size: 32px;
-  color: gray;
+  color: white;
   display: inline-block;
 }
 
-.logo-splash {
-  vertical-align: middle;
-  display: inline-block;
+p.splash-description {
+  font-size: 20px;
+  color: white;
 }
 
-.form-inline {
-  display: inline-block;
-}
+// .logo-splash {
+//   vertical-align: middle;
+//   display: inline-block;
+// }
+
+// .form{
+//   margin: 0 auto;
+//   width: 80%;
+// }
 
 .current-user {
-  display: inline-block;
+  text-align: center;
 }
-
-// .active-hover {
-//   color: #337ab7;
-// }
 
 @import './responsive-carousel';
 @import './responsive-carousel.slide';
