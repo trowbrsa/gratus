@@ -42,17 +42,17 @@ $( document ).ready(function() {
   $(".click-to-add").hover(function() {
     $(this).css("color", "#337ab7");
     }, function() {
-      $(this).css("color", "black");
+      $(this).css("color", "#CCC");
   });
 
   $(".find-inspiration").hover(function() {
     $(this).css("color", "#337ab7");
     }, function() {
-      $(this).css("color", "black");
+      $(this).css("color", "#CCC");
   });
   $(".view-calendar").hover(function() {
     $(this).css("color", "#337ab7");
     }, function() {
-      $(this).css("color", "black");
+      $(this).css("color", "#CCC");
   });
 });

@@ -4,7 +4,6 @@
 
 
 html, body {
-  // font-family: 'Nobile', sans-serif;
   font-family: 'Raleway', sans-serif;
   height: 100%;
   width: 100%;
@@ -25,11 +24,23 @@ html, body {
 }
 
 .background-grad {
-  background: image-url('gray_jean.png');
-  // background-repeat: no-repeat center center;
-  // background-size: cover;
+  // background: image-url('gray_jean.png');
+  background: image-url('dust.png');
   height: 100%;
   width: 100%;
+}
+
+.table th, .table td {
+     border-top: none !important;
+ }
+
+.table > tbody > tr > td {
+  font-size: 20px;
+  padding: 0px !important;
+}
+
+.table > tbody > tr > th {
+  padding: 0px !important;
 }
 
 .home-background-image {
@@ -38,7 +49,6 @@ html, body {
   background-size: cover;
   height: 100%;
   width: 100%;
-  font-family: 'Raleway', sans-serif;
 }
 
 .border-form-div {
@@ -80,14 +90,10 @@ html, body {
   color: #CCC;
 }
 
-// .home-head {
-//   color: #CCC;
-//   text-align: center;
-//   padding-bottom: 20px;
-// }
-
 .home-nav {
   margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .next {
@@ -120,7 +126,11 @@ img {
     }
 
 .splash {
-  background: image-url('splash_1_57op.jpg');
+  // background: image-url('slash_2.jpg');
+  // background: image-url('blurry-lights.jpg');
+  background: image-url('slash_2_dark.jpg');
+
+
   background-repeat: no-repeat center center;
   background-size: cover;
   height: 100%;
@@ -167,6 +177,10 @@ p.splash-description {
   font-size: 20px;
 }
 
+a.new-user-link {
+  font-weight: bold;
+}
+
 .registration-bg {
   background: image-url('party-lights.jpg');
   background-repeat: no-repeat center center;
@@ -181,6 +195,7 @@ p.splash-description {
   display: block;
   color: #CCC;
   font-weight: lighter;
+  letter-spacing: 0.5px;
 }
 
 .table {
@@ -191,7 +206,10 @@ p.splash-description {
 @media only screen and (max-width: 480px) {
   .full-calendar {
     font-size: 9px;
- }
+  }
+  p.splash-description {
+    font-size: 32;
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 565px) {
@@ -199,6 +217,7 @@ p.splash-description {
     font-size: 11px;
  }
 }
+
 
 .img-responsive {
   vertical-align: center;
