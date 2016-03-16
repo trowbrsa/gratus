@@ -1,17 +1,14 @@
-<%= render 'layouts/navbar' %>
-<div class="container">
-  <% t = Time.now %>
-  <h2>What are you grateful for today?</h2>
-  <br>
-  <%= react_component 'Gratitudes', {data: @gratitudes } %>
+<div class='background-grad'>
+  <%= render 'layouts/navbar' %>
+  <div class="container">
+    <% t = Time.now %>
+    <h2>What are you grateful for today?</h2>
+    <br>
+    <%= react_component 'Gratitudes', {data: @gratitudes } %>
 
-  <h4 class="inspo-description">Or, click below to get inspired!</h4>
-  <table class="find-inspo">
-    <tr class="find-inspiration" data-href='http://www.gratus.io/events'>
-      <td><i class="material-icons">favorite</i></td>
-      <td><%= link_to 'Find Inspiration', events_path, class:"inspo-link" %></td>
-    </tr>
-  </table>
+    <h4 class="inspo-description">Or, click below to get inspired!</h4>
+        <%= button_to 'Find Inspiration', events_path, method: :get, class:"btn btn-primary center-block" %>
+  </div>
+  <br>
+  <br>
 </div>
-<br>
-<br>

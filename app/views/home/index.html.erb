@@ -1,19 +1,19 @@
-<div class="background_image">
+<div class="home_background_image">
   <%= render 'layouts/navbar' %>
   <div class="container">
 
     <h3 class="home-head">Welcome, <%= current_user.first_name %>!</h3>
 
     <table>
-      <tr class="click-to-add" data-href='http://www.gratus.io/gratitudes'>
+      <tr class="click-to-add" data-href='#gratitudes'>
         <td><i class="material-icons">add_circle</i></td>
         <td style="padding:10px;"><%= link_to 'Add a Gratitude', gratitudes_path %></td>
       </tr>
-      <tr class="find-inspiration" data-href='http://www.gratus.io/events'>
+      <tr class="find-inspiration" data-href='#events'>
         <td><i class="material-icons">favorite</i></td>
         <td style="padding:10px;"><%= link_to 'Find Inspiration', events_path %></td>
       </tr>
-      <tr class="view-calendar" data-href='http://www.gratus.io/calendar'>
+      <tr class="view-calendar" data-href='#calendar'>
           <td><i class="material-icons">date_range</i></td>
           <td style="padding:10px;"><%= link_to 'View Calendar', calendar_path %></td>
       </tr>

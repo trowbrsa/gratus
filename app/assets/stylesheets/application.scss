@@ -8,9 +8,30 @@ html, body {
   height: 100%;
   width: 100%;
   background-color: #efefef;
+  color: #4c4c4c;
 }
 
-.background_image {
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+}
+
+.sign_in_background_image {
+  background: image-url('sign-in.jpg');
+  background-repeat: no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.background-grad {
+  background: image-url('gray_jean.png');
+  // background-repeat: no-repeat center center;
+  // background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.home_background_image {
   background: image-url('nasa1.jpg');
   background-repeat: no-repeat center center;
   background-size: cover;
@@ -71,6 +92,10 @@ html, body {
 
 .material-icons {
   font-size: 40px;
+}
+
+.fa {
+  color: #990000;
 }
 
 img {
@@ -153,17 +178,7 @@ p.splash-description {
   text-align: center;
 }
 
-.find-inspo {
-  background-color: gray;
-  border: 1px;
-  border-radius: 5px;
-  padding: 3px;
-  margin: auto;
-}
 
-.inspo-link {
-  padding-right: 5px;
-}
 
 @import './responsive-carousel';
 @import './responsive-carousel.slide';
