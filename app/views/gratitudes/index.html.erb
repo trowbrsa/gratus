@@ -5,7 +5,7 @@
     <h2>What are you grateful for today?</h2>
     <br>
     <%= react_component 'Gratitudes', {data: @gratitudes } %>
-
+    <br>
     <h4 class="inspo-description">Or, click below to get inspired!</h4>
         <%= button_to 'Find Inspiration', events_path, method: :get, class:"btn btn-primary center-block" %>
   </div>

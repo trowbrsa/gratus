@@ -9,6 +9,8 @@ html, body {
   width: 100%;
   background-color: #efefef;
   color: #4c4c4c;
+  background: image-url('tiles.png');
+
 }
 
 .navbar-brand {
@@ -34,12 +36,21 @@ html, body {
      border-top: none !important;
  }
 
-.table > tbody > tr > td {
-  font-size: 20px;
+ .big-stat {
+   font-size: 24px;
+   padding: 0px !important;
+ }
+
+.grad-stat {
   padding: 0px !important;
 }
 
-.table > tbody > tr > th {
+.github-img {
+  content:url("github.png");
+  height: 50px;
+}
+
+.table-grad > tbody > tr > th {
   padding: 0px !important;
 }
 
