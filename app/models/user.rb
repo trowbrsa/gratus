@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
   has_streak
 
   def best_user_streak
-    if self.streak(:graitudes).nil?
+    if self.streak(:gratitudes).nil?
       return 0
     end
     if self.streak(:gratitudes) > self.best_streak
