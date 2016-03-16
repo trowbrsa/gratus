@@ -31,7 +31,7 @@ html, body {
   width: 100%;
 }
 
-.home_background_image {
+.home-background-image {
   background: image-url('splash_1_57op.jpg');
   background-repeat: no-repeat center center;
   background-size: cover;
@@ -71,6 +71,21 @@ html, body {
   background-color: white;
   text-align: center;
 
+}
+
+.home-styling {
+  text-align: center;
+  color: #CCC;
+}
+
+// .home-head {
+//   color: #CCC;
+//   text-align: center;
+//   padding-bottom: 20px;
+// }
+
+.home-nav {
+  margin: 0 auto;
 }
 
 .next {
