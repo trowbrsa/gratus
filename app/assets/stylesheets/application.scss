@@ -21,9 +21,11 @@ html, body {
 .border-form-div {
   max-width: 300px;
   padding: 19px 29px 29px;
-  margin: 0 auto 20px;
-  background-color: #fff;
-  border: 1px solid #e5e5e5;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: #efefef;
+  border: 1px solid #efefef;
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
@@ -81,31 +83,54 @@ img {
   background-size: cover;
   height: 100%;
   width: 100%;
-  font: white;
+  color: #F5F5F5;
 }
 
 p.splash-header {
   font-family: 'Pacifico', cursive;
   font-size: 50px;
-  color: white;
+  color: #F5F5F5;
   text-align: center;
   padding: 20px;
 }
 
 p.splash-description {
   font-size: 50px;
-  color: white;
+  color: #F5F5F5;
   text-align: center;
 }
 
 .form-group{
   border-radius: 5px;
-  color: white;
+  color: #424242;
   letter-spacing: 2px;
+  background-color: none;
 }
 
 .current-user {
   text-align: center;
+}
+
+.user-input {
+  color: #F5F5F5;
+  font-weight: lighter;
+  font-family: 'Arial';
+}
+
+.new-user {
+  text-align: center;
+  color: #F5F5F5;
+  text-align: center;
+  background-color: none;
+  font-size: 20px;
+}
+
+.registration-bg {
+  background: image-url('party-lights.jpg');
+  background-repeat: no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
 @media only screen and (max-width: 480px) {

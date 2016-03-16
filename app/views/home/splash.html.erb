@@ -2,27 +2,26 @@
       <span class="helper"></span><p class="splash-header">Gratus</p>
       <div class="container">
         <p class="splash-description">Daily reminders of what you're thankful for.</p>
-        <%= link_to "Sign up here", new_user_registration_path %></p>
     </div>
-      <div class="current-user">
-        <%= form_for(resource, :html => {:class => "form"}, as: resource_name, url: session_path(resource_name)) do |f| %>
-          <div class="form-group">
-            <%= f.label :email %><br />
-            <%= f.email_field :email, autofocus: true %>
-          </div>
-
-          <div class="form-group">
-            <%= f.label :password %><br />
-            <%= f.password_field :password, autocomplete: "off" %>
-          </div>
-
-          <div class="actions form-group">
-            <%= f.submit "Log in" %>
-          </div>
-
-        <% end %>
+    <div class="current-user">
+      <%= form_for(resource, :html => {:class => "form"}, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="form-group">
+          <%= f.label :email, :class => "user-input" %><br />
+          <%= f.email_field :email, autofocus: true %>
         </div>
-      </div>
 
+        <div class="form-group">
+          <%= f.label :password, :class => "user-input" %><br />
+          <%= f.password_field :password, autocomplete: "off" %>
+        </div>
 
+        <div class="actions form-group">
+          <%= f.submit "Log in" %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="new-user">
+      Not a current user?  <%= link_to "Sign up here", new_user_registration_path, :class => "new-user-link" %></p>
+    </div>
 </div>
