@@ -4,7 +4,8 @@
 
 
 html, body {
-  font-family: 'Nobile', sans-serif;
+  // font-family: 'Nobile', sans-serif;
+  font-family: 'Raleway', sans-serif;
   height: 100%;
   width: 100%;
   background-color: #efefef;
@@ -37,6 +38,7 @@ html, body {
   background-size: cover;
   height: 100%;
   width: 100%;
+  font-family: 'Raleway', sans-serif;
 }
 
 .border-form-div {
@@ -171,6 +173,19 @@ p.splash-description {
   background-size: cover;
   height: 100%;
   width: 100%;
+}
+
+.grad-tracker {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  color: #CCC;
+  font-weight: lighter;
+}
+
+.table {
+  margin: 0 auto;
+
 }
 
 @media only screen and (max-width: 480px) {
