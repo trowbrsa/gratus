@@ -244,7 +244,7 @@
 (function($) {
 
 	var pluginName = "carousel",
-		initSelector = "." + pluginName,
+		initSelector = "beforegoto." + pluginName,
 		noTrans = pluginName + "-no-transition",
 		// UA is needed to determine whether to return true or false during touchmove (only iOS handles true gracefully)
 		iOS = /iPhone|iPad|iPod/.test( navigator.platform ) && navigator.userAgent.indexOf( "AppleWebKit" ) > -1,
