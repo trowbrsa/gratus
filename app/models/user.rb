@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
 
   def best_user_streak
     if self.streak(:gratitudes).nil?
-      return 0
+      return self.best_streak
     end
     if self.streak(:gratitudes) > self.best_streak
       self.best_streak = self.streak(:gratitudes)
@@ -20,7 +20,9 @@ class User < ActiveRecord::Base
   end
 
   def best_streak_grammar
-    if self.best_streak == 1
+    if self.best_streak.nil? || self.best_streak == 0
+      return "days"
+    elsif self.best_streak == 1
       return "day"
     else
       return "days"
@@ -28,7 +30,9 @@ class User < ActiveRecord::Base
   end
 
   def current_streak_grammar
-    if self.streak(:gratitudes) == 1
+    if self.streak(:gratitudes).nil?
+      return
+    elsif self.streak(:gratitudes) == 1
       return "day"
     else
       return "days"
