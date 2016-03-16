@@ -1,4 +1,6 @@
+# :nocov:
 class Calendar < Struct.new(:view, :date, :callback)
+
   HEADER = %w[Sunday Monday Tuesday Wednesday Thursday Friday Saturday]
   START_DAY = :sunday
 
@@ -41,3 +43,4 @@ class Calendar < Struct.new(:view, :date, :callback)
     (first..last).to_a.in_groups_of(7)
   end
 end
+# :nocov:

@@ -17,9 +17,10 @@ class HomeController < ApplicationController
   def about
 
   end
-
+  # :nocov:
   def letsencrypt
    render plain: ENV['LE_AUTH_RESPONSE']
   end
+  # :nocov:
 
 end
