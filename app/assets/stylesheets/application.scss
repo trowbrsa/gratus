@@ -25,6 +25,7 @@ html, body {
 
 .table th, .table td {
      border-top: none !important;
+     padding-top: 0px !important;
  }
 
  .big-stat {
@@ -99,7 +100,6 @@ html, body {
 
 .next {
   display: inline-block;
-  // background-color: white;
 }
 
 .prev {
