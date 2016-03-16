@@ -8,6 +8,9 @@ class User < ActiveRecord::Base
   has_streak
 
   def best_user_streak
+    if self.streak(:graitudes).nil?
+      return 0
+    end
     if self.streak(:gratitudes) > self.best_streak
       self.best_streak = self.streak(:gratitudes)
       self.save
