@@ -9,8 +9,6 @@ html, body {
   width: 100%;
   background-color: #efefef;
   color: #4c4c4c;
-  background: image-url('tiles.png');
-
 }
 
 .navbar-brand {
@@ -27,7 +25,7 @@ html, body {
 
 .background-grad {
   // background: image-url('gray_jean.png');
-  background: image-url('dust.png');
+  background: image-url('tiles.png');
   height: 100%;
   width: 100%;
 }
@@ -89,7 +87,6 @@ html, body {
   margin-bottom: 15px;
   padding: 7px 9px;
 }
-
 .imagestockpile {
   background-color: white;
   text-align: center;
@@ -109,7 +106,7 @@ html, body {
 
 .next {
   display: inline-block;
-  background-color: white;
+  // background-color: white;
 }
 
 .prev {

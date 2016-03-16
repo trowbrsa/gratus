@@ -1,8 +1,10 @@
-<%= render 'layouts/navbar' %>
-<div class="container">
+<div class='background-grad'>
+  <%= render 'layouts/navbar' %>
+  <div class="container">
 
-  <h2> <%= @display_date.strftime('%A') %>, <%= @display_date.strftime('%B') %> <%= @display_date.strftime('%d')%> </h2>
-  <h3> here are the things you are grateful for on this day</h3>
+    <h2> <%= @display_date.strftime('%A') %>, <%= @display_date.strftime('%B') %> <%= @display_date.strftime('%d')%> </h2>
+    <h3> here are the things you are grateful for on this day</h3>
 
-  <%= react_component 'Gratitudes', {data: @gratitudes } %>
+    <%= react_component 'Gratitudes', {data: @gratitudes } %>
+  </div>
 </div>

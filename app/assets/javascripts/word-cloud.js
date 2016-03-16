@@ -119,7 +119,7 @@ $( document ).ready(function() {
   }
 
   function update() {
-      layout.font('Nobile').spiral('archimedean');
+      layout.font('Raleway').spiral('archimedean');
       fontSize = d3.scale['sqrt']().range([20, 100]);
       if (tags.length){
           fontSize.domain([+tags[tags.length - 1].value || 1, +tags[0].value]);
