@@ -23,7 +23,7 @@ class GratitudesController < ApplicationController
   def wordcloud
     user = current_user
     array_of_gratitudes = []
-    removed_terms = ['the','and','or', 'is', "of" "to","","&","on","the","with","in","be","for","a","null"]
+    removed_terms = ['the','and','or', 'is', "of", "to","","&","on","the","with","in","be","for","a","null"]
     user.gratitudes.each do |grad|
       if grad.description?
         array_of_gratitudes.push(grad.description.downcase.gsub(/[^a-z0-9\s]/i, ''))
