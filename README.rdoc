@@ -23,14 +23,14 @@ To download this project:
 
 To run the test suite, run 'rspec' in the command line.
 
-__Capstone Concept__:
+====Capstone Concept:
 
-  Link: https://gist.github.com/trowbrsa/7130452213470b567777
+  https://gist.github.com/trowbrsa/7130452213470b567777
 
-__Product Plan__:
+====Product Plan:
 
   Link: https://gist.github.com/trowbrsa/78746ff58ef5780b7b79
 
-__Trello Board__:
+====Trello Board:
 
   Link: https://trello.com/b/oaiDfHxg/capstone
