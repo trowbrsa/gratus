@@ -1,7 +1,11 @@
+$baseFontFamily: 'Raleway', sans-serif !default;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
 
+@sansFontFamily: 'Raleway', sans-serif;
+@serifFontFamily: 'Raleway', sans-serif;
 
 html, body {
   font-family: 'Raleway', sans-serif;
@@ -231,7 +235,7 @@ a.new-user-link {
     height: 100%;
     width: 100%;
   }
-}  
+}
 
 
 .img-responsive {
