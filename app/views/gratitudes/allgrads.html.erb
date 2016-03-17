@@ -14,6 +14,7 @@
       <% grads.each do |grad| %>
         <%= grad.description %><br>
         <% if !grad.img_url.nil? %>
+        <br>
           <%= image_tag(grad.img_url) %>
         <% end %>
         <br>
