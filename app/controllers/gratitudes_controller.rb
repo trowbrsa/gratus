@@ -2,7 +2,7 @@ class GratitudesController < ApplicationController
   def index
     user = current_user
     gratitudes = user.gratitudes
-    @gratitudes = gratitudes.where("created_at >= ?", Time.zone.now.beginning_of_day).reverse
+    @gratitudes = gratitudes.where("created_at >= ?", Time.zone.now.beginning_of_day).order(:description)
   end
 
   def create
