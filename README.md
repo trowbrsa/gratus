@@ -8,7 +8,7 @@ This app was made using React, Javascript and D3 for the front-end and Rails for
 
 Link: http://www.gratus.io
 
-### Dependencies
+###Dependencies
 
 Ruby version 2.2.3
 
@@ -23,14 +23,8 @@ To download this project:
 
 To run the test suite, run 'rspec' in the command line.
 
-###Capstone Concept:
+  [Capstone Concept](https://gist.github.com/trowbrsa/7130452213470b567777)
 
-  [Link](https://gist.github.com/trowbrsa/7130452213470b567777)
+  [Product Plan](https://gist.github.com/trowbrsa/78746ff58ef5780b7b79)
 
-###Product Plan:
-
-  [Link](https://gist.github.com/trowbrsa/78746ff58ef5780b7b79)
-
-====Trello Board:
-
-  [Link](https://trello.com/b/oaiDfHxg/capstone)
+  [Trello Board](https://trello.com/b/oaiDfHxg/capstone)
