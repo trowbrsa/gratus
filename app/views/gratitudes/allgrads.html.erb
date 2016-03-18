@@ -12,10 +12,10 @@
         <h3> <%= date.strftime('%A') %>, <%= date.strftime('%B') %> <%= date.strftime('%d') %> </h3>
       <% end %>
       <% grads.each do |grad| %>
-        <%= grad.description %><br>
+        <div class='grad-description'><%= grad.description %></div>
         <% if !grad.img_url.nil? %>
-        <br>
           <%= image_tag(grad.img_url) %>
+        </br>
         <% end %>
         <br>
       <% end %>
